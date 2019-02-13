@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class LookAtCube : MonoBehaviour {
 
-	GameObject membraneCube;
-	Transform membraneTransform;
+	public GameObject membraneCube;
+    private float speed = 10.0f;
+	private Vector3 membraneTransform;
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +15,7 @@ public class LookAtCube : MonoBehaviour {
 
 		Debug.Log ("Look at = " + membraneCube.name);
 
-		membraneTransform = membraneCube.transform;
+		membraneTransform = membraneCube.transform.position;
 		transform.LookAt (membraneTransform);
 		
 	}
@@ -22,7 +23,7 @@ public class LookAtCube : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		transform.LookAt (membraneTransform);
+		transform.RotateAround(membraneCube.transform.position, Vector3.up, speed*Time.deltaTime);
 		
 	}
 }
