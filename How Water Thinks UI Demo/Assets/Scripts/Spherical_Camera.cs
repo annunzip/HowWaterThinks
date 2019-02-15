@@ -14,7 +14,7 @@ public class Spherical_Camera : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        point = targetobject.transform.position;
+        point = targetobject.transform.position; // + new Vector3(-2.0f, 0.0f, 0.0f);
         transform.LookAt(point);
     }
 
@@ -24,12 +24,12 @@ public class Spherical_Camera : MonoBehaviour
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.RotateAround(point, new Vector3(0.0f, -1.0f, 0.0f), 20 * Time.deltaTime * rotatespeed);
+            transform.RotateAround(point, new Vector3(0.0f, 1.0f, 0.0f), 20 * Time.deltaTime * rotatespeed);
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.RotateAround(point, new Vector3(0.0f, 1.0f, 0.0f), 20 * Time.deltaTime * rotatespeed);
+            transform.RotateAround(point, new Vector3(0.0f, -1.0f, 0.0f), 20 * Time.deltaTime * rotatespeed);
         }
 
         if (Input.GetKey(KeyCode.UpArrow))
@@ -44,12 +44,12 @@ public class Spherical_Camera : MonoBehaviour
 
         if (Input.GetKey(KeyCode.KeypadMinus))
         {
-            transform.position += transform.forward * zoomspeed * Time.deltaTime;
+            transform.position -= transform.forward * zoomspeed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.KeypadPlus))
         {
-            transform.position -= transform.forward * zoomspeed * Time.deltaTime;
+            transform.position += transform.forward * zoomspeed * Time.deltaTime;
         }
     }
 }
