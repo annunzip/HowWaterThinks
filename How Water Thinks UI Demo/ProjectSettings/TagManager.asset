@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Boxes
+  - Atoms
+  - Atom
+  - RunControl
+  - test
   layers:
   - Default
   - TransparentFX
