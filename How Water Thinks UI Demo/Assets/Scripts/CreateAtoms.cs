@@ -53,10 +53,11 @@ public class CreateAtoms : MonoBehaviour {
         plusMinus = CreatePlusMinus();
 
         // Calculate x position of new molecule
-        float xatom = Random.Range(l / 2f, L / 2f) * plusMinus;
+        //float xatom = Random.Range(l / 2f, L / 2f) * plusMinus;
+        float xatom = 661;
 
         // Calculate y position of new molecule
-        float probThreshold = 0.5f * (1f - freeEnergy);
+        /*float probThreshold = 0.5f * (1f - freeEnergy);
         float yatom;
         if (Random.value > probThreshold)
         {
@@ -65,13 +66,15 @@ public class CreateAtoms : MonoBehaviour {
         else
         {
             yatom = -Random.Range(l, L / 2f);
-        }
+        }*/
+        float yatom = 215;
 
 
         // Choose a number number in the set 1, -1
         plusMinus = CreatePlusMinus();
         // Calculate z position of new molecule
-        float zatom = Random.Range(l / 2f, L / 2f) * plusMinus;
+        //float zatom = Random.Range(l / 2f, L / 2f) * plusMinus;
+        float zatom = -205;
 
         // Create a position vector
         Vector3 atomPosition = new Vector3(xatom, yatom, zatom);
