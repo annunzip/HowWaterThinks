@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class CreateAtoms : MonoBehaviour {
 
-    public int numberOfAtoms;
-    public GameObject atom;
+    public int numberOfSodiumAtoms;
+    public GameObject sodiumAtom;
+    public int numberOfChlorineAtoms;
+    public GameObject chlorineAtom;
     float freeEnergy;
     Transform atomTransform;
 
     // Use this for initialization
     public void StartCreatingMolecules (float L, float l) {
 
-        atomTransform = atom.transform;
+        atomTransform = sodiumAtom.transform;
 
         freeEnergy = 1f;
         CreateNAtoms(L, l);
@@ -20,7 +22,7 @@ public class CreateAtoms : MonoBehaviour {
 
     void CreateNAtoms(float L, float l) {
 
-        for (int i = 0; i < numberOfAtoms; i++)
+        for (int i = 0; i < numberOfSodiumAtoms; i++)
         {
 
             //Debug.Log ("Entering CreateNAtoms");
@@ -31,7 +33,26 @@ public class CreateAtoms : MonoBehaviour {
 
 
             // Create a clone of atom at atomPosition
-            GameObject atomclone = Instantiate(atom, atomPosition, Quaternion.identity);
+            GameObject atomclone = Instantiate(sodiumAtom, atomPosition, Quaternion.identity);
+
+
+
+            // Set initial velocity
+            //atomclone.GetComponent<Rigidbody>().velocity = Vector3.up;
+        }
+
+        for (int i = 0; i < numberOfChlorineAtoms; i++)
+        {
+
+            //Debug.Log ("Entering CreateNAtoms");
+            // Create an ion in a box
+            atomTransform.position = CreateAtomPosition(L, l);
+            Vector3 atomPosition = atomTransform.position;
+
+
+
+            // Create a clone of atom at atomPosition
+            GameObject atomclone = Instantiate(chlorineAtom, atomPosition, Quaternion.identity);
 
 
 
