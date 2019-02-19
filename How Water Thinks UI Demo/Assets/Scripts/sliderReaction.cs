@@ -14,8 +14,8 @@ public class sliderReaction : MonoBehaviour {
         //if (ionSlider == null) ionSlider = GameObject.FindGameObjectWithTag("NumIons").GetComponent<Slider>();
 
         //GameObject atoms = GameObject.FindGameObjectWithTag("Atoms");
-        int numberOfSodiumAtoms = 15;
-        int numberOfChlorineAtoms = 15;
+        //int numberOfSodiumAtoms = 15;
+        //int numberOfChlorineAtoms = 15;
 
         //Slider ionSlider = GameObject.FindGameObjectWithTag("NumIons").GetComponent<Slider>();
 }
