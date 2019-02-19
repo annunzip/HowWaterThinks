@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2787,9 +2787,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1694160962}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 30
   m_WholeNumbers: 1
-  m_Value: 50
+  m_Value: 15
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -4624,12 +4624,12 @@ Prefab:
     - target: {fileID: 114018876896816170, guid: 1c8a6b4a6b5b8de44ae049d205291b57,
         type: 2}
       propertyPath: numberOfSodiumAtoms
-      value: 50
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114018876896816170, guid: 1c8a6b4a6b5b8de44ae049d205291b57,
         type: 2}
       propertyPath: numberOfChlorineAtoms
-      value: 50
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114018876896816170, guid: 1c8a6b4a6b5b8de44ae049d205291b57,
         type: 2}
