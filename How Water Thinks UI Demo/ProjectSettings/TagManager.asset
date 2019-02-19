@@ -10,6 +10,7 @@ TagManager:
   - NumIons
   - SodiumAtom
   - ChlorineAtom
+  - SodiumToggle
   layers:
   - Default
   - TransparentFX
