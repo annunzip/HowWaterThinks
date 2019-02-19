@@ -6,9 +6,10 @@ TagManager:
   tags:
   - Boxes
   - Atoms
-  - Atom
   - RunControl
-  - test
+  - NumIons
+  - SodiumAtom
+  - ChlorineAtom
   layers:
   - Default
   - TransparentFX

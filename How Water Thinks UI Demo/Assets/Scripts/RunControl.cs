@@ -33,12 +33,18 @@ public class RunControl : MonoBehaviour {
 
 	void RemoveAllMolecules(){
 
-		GameObject[] atomClones = GameObject.FindGameObjectsWithTag ("Atom");
+		GameObject[] sodiumAtomClones = GameObject.FindGameObjectsWithTag("SodiumAtom");
+        GameObject[] chlorineAtomClones = GameObject.FindGameObjectsWithTag("ChlorineAtom");
 
-		foreach (GameObject atomClone in atomClones) {
+        foreach (GameObject atomClone in sodiumAtomClones) {
 			Destroy (atomClone);
 		}
-	}
+
+        foreach (GameObject atomClone in chlorineAtomClones)
+        {
+            Destroy(atomClone);
+        }
+    }
 
 
 

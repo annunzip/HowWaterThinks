@@ -61,6 +61,48 @@ public class CreateAtoms : MonoBehaviour {
         }
     }
 
+    public void AddNAtoms(float L, float l, int numAtoms)
+    {
+
+        for (int i = 0; i < numAtoms; i++)
+        {
+
+            //Debug.Log ("Entering CreateNAtoms");
+            // Create an ion in a box
+            atomTransform.position = CreateAtomPosition(L, l);
+            Vector3 atomPosition = atomTransform.position;
+
+
+
+            // Create a clone of atom at atomPosition
+            GameObject atomclone = Instantiate(sodiumAtom, atomPosition, Quaternion.identity);
+
+
+
+            // Set initial velocity
+            //atomclone.GetComponent<Rigidbody>().velocity = Vector3.up;
+        }
+
+        for (int i = 0; i < numAtoms; i++)
+        {
+
+            //Debug.Log ("Entering CreateNAtoms");
+            // Create an ion in a box
+            atomTransform.position = CreateAtomPosition(L, l);
+            Vector3 atomPosition = atomTransform.position;
+
+
+
+            // Create a clone of atom at atomPosition
+            GameObject atomclone = Instantiate(chlorineAtom, atomPosition, Quaternion.identity);
+
+
+
+            // Set initial velocity
+            //atomclone.GetComponent<Rigidbody>().velocity = Vector3.up;
+        }
+    }
+
     Vector3 CreateAtomPosition(float L, float l)
     {
 
