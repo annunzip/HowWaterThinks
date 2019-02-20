@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23563052510190420}
   - component: {fileID: 54788086917338120}
   - component: {fileID: 114705481880956992}
+  - component: {fileID: 114464527149426278}
   m_Layer: 0
   m_Name: chlorineAtom
   m_TagString: ChlorineAtom
@@ -101,13 +102,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &114464527149426278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1440897163994094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25e59adb1237ca74285d0ec6372be25d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inVelA: {x: 0, y: 0, z: 0}
+  outVelA: {x: 0, y: 0, z: 0}
+  inVelB: {x: 0, y: 0, z: 0}
+  outVelB: {x: 0, y: 0, z: 0}
 --- !u!114 &114705481880956992
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1440897163994094}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff639eeaa696c6342982917584f62182, type: 3}
   m_Name: 
