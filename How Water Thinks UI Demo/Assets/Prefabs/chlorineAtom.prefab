@@ -131,6 +131,7 @@ MonoBehaviour:
   velocityMultiplier: 0.05
   angularVelocityMultiplier: 0.05
   temperatureMultiplier: 0.5
+  forward: {x: 0, y: 0, z: 0}
 --- !u!135 &135266285632342200
 SphereCollider:
   m_ObjectHideFlags: 1
