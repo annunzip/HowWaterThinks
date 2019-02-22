@@ -142,7 +142,7 @@ public class CreateAtoms : MonoBehaviour {
         // Create a position vector
         Vector3 atomPosition = new Vector3(661 + xatom, 215 + yatom, -205 + zatom);
 
-        Debug.Log(atomPosition);
+        //Debug.Log(atomPosition);
         return atomPosition;
 
     }
