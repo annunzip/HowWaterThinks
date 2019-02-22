@@ -4209,7 +4209,7 @@ MonoBehaviour:
   m_Text: 'Number of Ions
 
 
-    1         15       30'
+    0         15       30'
 --- !u!222 &778202520
 CanvasRenderer:
   m_ObjectHideFlags: 0
