@@ -56,3 +56,6 @@ MonoBehaviour:
   numberOfChlorineAtoms: 50
   chlorineAtom: {fileID: 1440897163994094, guid: 59f22bc9eab314256ba16c0dd5db5c49,
     type: 2}
+  numberOfPotassiumAtoms: 0
+  potassiumAtom: {fileID: 1440897163994094, guid: 54ed5896283458b46916df4230c970ca,
+    type: 2}

@@ -8,6 +8,8 @@ public class CreateAtoms : MonoBehaviour {
     public GameObject sodiumAtom;
     public int numberOfChlorineAtoms;
     public GameObject chlorineAtom;
+    public int numberOfPotassiumAtoms;
+    public GameObject potassiumAtom;
     float freeEnergy;
     Transform atomTransform;
 

@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114705481880956992}
   - component: {fileID: 114467526787645584}
   m_Layer: 0
-  m_Name: sodiumAtom
+  m_Name: potassiumAtom
   m_TagString: SodiumAtom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1440897163994094}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 660.52124, y: 215.85895, z: -205.44608}
+  m_LocalPosition: {x: 660.5256, y: 215.92952, z: -204.51031}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -60,7 +60,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 750b991ddffaeb140852a340e23d8fc8, type: 2}
+  - {fileID: 2100000, guid: f3751ba5516dcf8458cb6f066819946f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
