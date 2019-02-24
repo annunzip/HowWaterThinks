@@ -11,6 +11,8 @@ TagManager:
   - SodiumAtom
   - ChlorineAtom
   - SodiumToggle
+  - AtomsOutsideCounterText
+  - AtomsInsideCounterText
   layers:
   - Default
   - TransparentFX
