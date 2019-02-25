@@ -9,13 +9,15 @@ TagManager:
   - RunControl
   - SodiumAtom
   - ChlorineAtom
-  - SodiumToggle
   - AtomsOutsideCounterText
   - AtomsInsideCounterText
   - NumNaIons
   - NumClIons
   - NumKIons
   - PotassiumAtom
+  - naToggle
+  - clToggle
+  - kToggle
   layers:
   - Default
   - TransparentFX

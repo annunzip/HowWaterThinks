@@ -10,25 +10,39 @@ public class toggleReaction : MonoBehaviour {
 		
 	}
 
-    public void HandleSodiumToggle(Toggle sodiumToggle)
+    public void HandleNaToggle(Toggle sodiumToggle)
     {
-        /*if (GameObject.FindGameObjectsWithTag("SodiumToggle").isOn() == true)
+        if (sodiumToggle.isOn == true)
         {
-            GameObject.FindGameObjectWithTag("Atoms").CreateAtoms();
+            GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, (int)GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value, 0, 0);
         } else
         {
-
-        }*/
+            foreach (GameObject atom in GameObject.FindGameObjectsWithTag("SodiumAtom")) Destroy(atom);
+        }
     }
 
-    public void HandleChlorineToggle(Toggle chlorineToggle)
+    public void HandleClToggle(Toggle chlorineToggle)
     {
-
+        if (chlorineToggle.isOn == true)
+        {
+            GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 0, (int)GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value, 0);
+        }
+        else
+        {
+            foreach (GameObject atom in GameObject.FindGameObjectsWithTag("ChlorineAtom")) Destroy(atom);
+        }
     }
 
-    public void HandlePotassiumToggle(Toggle potassiumToggle)
+    public void HandleKToggle(Toggle potassiumToggle)
     {
-
+        if (potassiumToggle.isOn == true)
+        {
+            GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 0, 0, (int)GameObject.FindGameObjectWithTag("NumKIons").GetComponent<Slider>().value);
+        }
+        else
+        {
+            foreach (GameObject atom in GameObject.FindGameObjectsWithTag("PotassiumAtom")) Destroy(atom);
+        }
     }
 
     public void HandleWaterToggle(Toggle waterToggle)

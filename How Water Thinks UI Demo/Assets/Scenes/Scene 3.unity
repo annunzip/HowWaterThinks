@@ -2629,7 +2629,7 @@ GameObject:
   - component: {fileID: 451974579}
   m_Layer: 0
   m_Name: kToggle
-  m_TagString: Untagged
+  m_TagString: kToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2697,7 +2697,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 889702323}
-        m_MethodName: HandlePotassium
+        m_MethodName: HandleKToggle
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 451974579}
@@ -2867,7 +2867,7 @@ GameObject:
   - component: {fileID: 494164754}
   m_Layer: 0
   m_Name: clToggle
-  m_TagString: Untagged
+  m_TagString: clToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2935,7 +2935,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 889702323}
-        m_MethodName: HandleChlorine
+        m_MethodName: HandleClToggle
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 494164754}
@@ -6881,7 +6881,7 @@ GameObject:
   - component: {fileID: 1234809798}
   m_Layer: 0
   m_Name: naToggle
-  m_TagString: SodiumToggle
+  m_TagString: naToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6949,7 +6949,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 889702323}
-        m_MethodName: HandleSodium
+        m_MethodName: HandleNaToggle
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1234809798}
