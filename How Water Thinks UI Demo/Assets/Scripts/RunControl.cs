@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RunControl : MonoBehaviour {
 
@@ -27,6 +28,10 @@ public class RunControl : MonoBehaviour {
         GameObject atoms = GameObject.FindGameObjectWithTag("Atoms");
         //atoms.GetComponent<CreateAtoms>().StartCreatingMolecules(boxSideLength, channelSideLength);
         atoms.GetComponent<CreateAtoms>().StartCreatingMolecules(1, 1);
+
+        GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value = GameObject.FindGameObjectsWithTag("SodiumAtom").Length;
+        GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value = GameObject.FindGameObjectsWithTag("ChlorineAtom").Length;
+        GameObject.FindGameObjectWithTag("NumKIons").GetComponent<Slider>().value = GameObject.FindGameObjectsWithTag("PotassiumAtom").Length;
     }
 
 

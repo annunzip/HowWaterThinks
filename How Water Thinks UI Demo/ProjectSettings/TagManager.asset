@@ -7,12 +7,15 @@ TagManager:
   - Boxes
   - Atoms
   - RunControl
-  - NumIons
   - SodiumAtom
   - ChlorineAtom
   - SodiumToggle
   - AtomsOutsideCounterText
   - AtomsInsideCounterText
+  - NumNaIons
+  - NumClIons
+  - NumKIons
+  - PotassiumAtom
   layers:
   - Default
   - TransparentFX

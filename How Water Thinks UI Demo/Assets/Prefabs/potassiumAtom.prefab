@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114467526787645584}
   m_Layer: 0
   m_Name: potassiumAtom
-  m_TagString: SodiumAtom
+  m_TagString: PotassiumAtom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

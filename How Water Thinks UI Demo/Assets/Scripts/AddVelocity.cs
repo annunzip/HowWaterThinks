@@ -33,7 +33,7 @@ public class AddVelocity : MonoBehaviour {
         this.gameObject.GetComponent<Rigidbody>().drag = 0;
         this.gameObject.GetComponent<Rigidbody>().angularDrag = 0;
 
-        int idealVelocity = 4;
+        int idealVelocity = 3;
         //Debug.Log(this.gameObject.GetComponent<Rigidbody>().velocity);
         this.gameObject.GetComponent<Rigidbody>().velocity = idealVelocity * this.gameObject.GetComponent<Rigidbody>().velocity.normalized;
     }

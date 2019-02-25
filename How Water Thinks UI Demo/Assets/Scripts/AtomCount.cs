@@ -25,6 +25,11 @@ public class AtomCount : MonoBehaviour {
             if (atom.transform.position.y > 214.95) numAtomsOuter += 1;
             else numAtomsInner += 1;
         }
+        foreach (GameObject atom in GameObject.FindGameObjectsWithTag("PotassiumAtom"))
+        {
+            if (atom.transform.position.y > 214.95) numAtomsOuter += 1;
+            else numAtomsInner += 1;
+        }
 
         GameObject.FindGameObjectWithTag("AtomsOutsideCounterText").GetComponent<Text>().text = "Atoms Outside: " + numAtomsOuter;
         GameObject.FindGameObjectWithTag("AtomsInsideCounterText").GetComponent<Text>().text = "Atoms Inside: " + numAtomsInner;

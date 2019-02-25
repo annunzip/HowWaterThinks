@@ -63,10 +63,10 @@ public class CreateAtoms : MonoBehaviour {
         }
     }
 
-    public void AddNAtoms(float L, float l, int numAtoms)
+    public void AddNAtoms(float L, float l, int numNaAtoms, int numClAtoms, int numKAtoms)
     {
 
-        for (int i = 0; i < numAtoms; i++)
+        for (int i = 0; i < numNaAtoms; i++)
         {
 
             //Debug.Log ("Entering CreateNAtoms");
@@ -85,7 +85,7 @@ public class CreateAtoms : MonoBehaviour {
             atomclone.GetComponent<Rigidbody>().velocity = Vector3.up;
         }
 
-        for (int i = 0; i < numAtoms; i++)
+        for (int i = 0; i < numClAtoms; i++)
         {
 
             //Debug.Log ("Entering CreateNAtoms");
@@ -97,6 +97,25 @@ public class CreateAtoms : MonoBehaviour {
 
             // Create a clone of atom at atomPosition
             GameObject atomclone = Instantiate(chlorineAtom, atomPosition, Quaternion.identity);
+
+
+
+            // Set initial velocity
+            atomclone.GetComponent<Rigidbody>().velocity = Vector3.up;
+        }
+
+        for (int i = 0; i < numKAtoms; i++)
+        {
+
+            //Debug.Log ("Entering CreateNAtoms");
+            // Create an ion in a box
+            atomTransform.position = CreateAtomPosition(L, l);
+            Vector3 atomPosition = atomTransform.position;
+
+
+
+            // Create a clone of atom at atomPosition
+            GameObject atomclone = Instantiate(potassiumAtom, atomPosition, Quaternion.identity);
 
 
 
