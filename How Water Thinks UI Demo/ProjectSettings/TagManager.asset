@@ -18,6 +18,7 @@ TagManager:
   - naToggle
   - clToggle
   - kToggle
+  - Voltage
   layers:
   - Default
   - TransparentFX
