@@ -19,9 +19,9 @@ TagManager:
   - clToggle
   - kToggle
   - Voltage
-  - test
   - VoltageOutsideCounterText
   - VoltageInsideCounterText
+  - VoltmeterTextTop
   layers:
   - Default
   - TransparentFX

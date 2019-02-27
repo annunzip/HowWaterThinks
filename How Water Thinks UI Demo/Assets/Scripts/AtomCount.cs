@@ -76,15 +76,38 @@ public class AtomCount : MonoBehaviour {
 
         //Handling voltage
         float maxVoltage = GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length;
+        GameObject.FindGameObjectWithTag("VoltmeterTextTop").GetComponent<Text>().text = (GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length).ToString();
 
         /*if (voltage > 0) GameObject.FindGameObjectWithTag("Voltage").GetComponent<Text>().color = new Color((voltage/maxVoltage*255f)/255f, 0f/255f, 0f/255f);
         else if (voltage < 0) GameObject.FindGameObjectWithTag("Voltage").GetComponent<Text>().color = new Color(0f/0f, 0f/0f, (-voltage/maxVoltage*255f)/255f);
         else GameObject.FindGameObjectWithTag("Voltage").GetComponent<Text>().color = new Color(0f/255f, 0f/255f, 0f/255f);
         Debug.Log(voltage);*/
-        
+
         //Setting voltage slider values
-        GameObject.FindGameObjectWithTag("Voltage").GetComponent<Slider>().minValue = 0;
+        GameObject.FindGameObjectWithTag("Voltage").GetComponent<Slider>().minValue = -maxVoltage;
         GameObject.FindGameObjectWithTag("Voltage").GetComponent<Slider>().maxValue = maxVoltage;
         GameObject.FindGameObjectWithTag("Voltage").GetComponent<Slider>().value = voltage;
+
+        /*
+        //Gradient creation and application
+        Gradient grad = new Gradient();
+        GradientColorKey[] colorKey = new GradientColorKey[2];
+        colorKey[0].color = Color.blue;
+        colorKey[0].time = 0.0f;
+        colorKey[1].color = Color.red;
+        colorKey[1].time = 1.0f;
+
+        GradientAlphaKey[] alphaKey = new GradientAlphaKey[2];
+        alphaKey[0].alpha = 1.0f;
+        alphaKey[0].time = 0.0f;
+        alphaKey[1].alpha = 0.0f;
+        alphaKey[1].time = 1.0f;
+
+        grad.SetKeys(colorKey, alphaKey);
+        */
+
+        if (voltage > 0) GameObject.FindGameObjectWithTag("Voltage").GetComponentInChildren<Image>().color = new Color((voltage / maxVoltage * 255f) / 255f, 0f / 255f, 0f / 255f);
+        else if (voltage < 0) GameObject.FindGameObjectWithTag("Voltage").GetComponentInChildren<Image>().color = new Color(0f / 0f, 0f / 0f, (-voltage / maxVoltage * 255f) / 255f);
+        else GameObject.FindGameObjectWithTag("Voltage").GetComponentInChildren<Image>().color = new Color(0f / 255f, 0f / 255f, 0f / 255f);
     }
 }
