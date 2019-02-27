@@ -25,11 +25,8 @@ public class sliderReaction : MonoBehaviour {
             //Debug.Log("ionSlider.value = " + (int)(ionSlider.value));
             if (numAtoms < (int)(naSlider.value))
             {
-                while (numAtoms < (int)(naSlider.value))
-                {
-                    GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, (int)Math.Floor(naSlider.value - numAtoms), 0, 0);
-                    numAtoms++;
-                }
+                GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, (int)Math.Floor(naSlider.value - numAtoms), 0, 0);
+                numAtoms++;
 
             }
             else if (numAtoms > (int)(naSlider.value))
@@ -52,11 +49,9 @@ public class sliderReaction : MonoBehaviour {
 
             if (numAtoms < (int)(clSlider.value))
             {
-                while (numAtoms < (int)(clSlider.value))
-                {
-                    GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 0, (int)Math.Floor(clSlider.value - numAtoms), 0);
-                    numAtoms++;
-                }
+
+                GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 0, (int)Math.Floor(clSlider.value - numAtoms), 0);
+                numAtoms++;
 
             }
             else if (numAtoms > (int)(clSlider.value))
@@ -79,12 +74,8 @@ public class sliderReaction : MonoBehaviour {
 
             if (numAtoms < (int)(kSlider.value))
             {
-                while (numAtoms < (int)(kSlider.value))
-                {
                     GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 0, 0, (int)Math.Floor(kSlider.value - numAtoms));
                     numAtoms++;
-                }
-
             }
             else if (numAtoms > (int)(kSlider.value))
             {
