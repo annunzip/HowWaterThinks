@@ -98,6 +98,7 @@ public class AtomCount : MonoBehaviour {
         //Handling voltage
         float maxVoltage = GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length;
         GameObject.FindGameObjectWithTag("VoltmeterTextTop").GetComponent<Text>().text = (GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length).ToString();
+        GameObject.FindGameObjectWithTag("VoltmeterTextBottom").GetComponent<Text>().text = "-" + (GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length).ToString();
 
         /*if (voltage > 0) GameObject.FindGameObjectWithTag("Voltage").GetComponent<Text>().color = new Color((voltage/maxVoltage*255f)/255f, 0f/255f, 0f/255f);
         else if (voltage < 0) GameObject.FindGameObjectWithTag("Voltage").GetComponent<Text>().color = new Color(0f/0f, 0f/0f, (-voltage/maxVoltage*255f)/255f);

@@ -22,6 +22,8 @@ TagManager:
   - VoltageOutsideCounterText
   - VoltageInsideCounterText
   - VoltmeterTextTop
+  - test
+  - VoltmeterTextBottom
   layers:
   - Default
   - TransparentFX
