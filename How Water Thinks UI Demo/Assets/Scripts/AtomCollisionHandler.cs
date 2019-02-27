@@ -37,6 +37,22 @@ public class AtomCollisionHandler : MonoBehaviour {
         }
     }
 
+    public void OnTriggerStay(Collider atom)
+    {
+        float charge = 1f;
+        float electricField = -(GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltageOuter() - GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltage()); //-(VO - VI) / h;
+        //Debug.Log(atom.GetComponent<Rigidbody>());
+        if (atom.GetComponent<Rigidbody>() != null) atom.GetComponent<Rigidbody>().AddForce(transform.up * charge * electricField);
+    }
+
+    public void OnTriggerExit(Collider atom)
+    {
+        float charge = 1f;
+        float electricField = -(GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltageOuter() - GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltage()); //-(VO - VI) / h;
+        //Debug.Log(atom.GetComponent<Rigidbody>());
+        if (atom.GetComponent<Rigidbody>() != null) atom.GetComponent<Rigidbody>().AddForce(transform.up * charge * electricField);
+    }
+
     // Update is called once per frame
     void Update () {
 		

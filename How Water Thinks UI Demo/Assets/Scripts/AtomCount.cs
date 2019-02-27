@@ -5,19 +5,40 @@ using UnityEngine.UI;
 
 public class AtomCount : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public int numAtomsOuter;
+    public int numAtomsInner;
+    public float voltageOuter;
+    public float voltageInner;
+    public float voltage;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    public float getVoltageOuter()
+    {
+        return voltageOuter;
+    }
+
+    public float getVoltageInner()
+    {
+        return voltageInner;
+    }
+
+    public float getVoltage()
+    {
+        return voltage;
+    }
+
+    // Update is called once per frame
+    void Update () {
         //Getting the number of atoms inside and outside
-        int numAtomsOuter = 0;
-        int numAtomsInner = 0;
-        float voltageOuter = 0;
-        float voltageInner = 0;
-        float voltage = 0;
+        numAtomsOuter = 0;
+        numAtomsInner = 0;
+        voltageOuter = 0;
+        voltageInner = 0;
+        voltage = 0;
 
         foreach (GameObject atom in GameObject.FindGameObjectsWithTag("SodiumAtom")) {
             if (atom.transform.position.y > 214.95)
