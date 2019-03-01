@@ -2430,9 +2430,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1459145206}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 30
+  m_MaxValue: 100
   m_WholeNumbers: 1
-  m_Value: 15
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2605,7 +2605,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.01, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3478,9 +3478,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1694160962}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 30
+  m_MaxValue: 100
   m_WholeNumbers: 1
-  m_Value: 15
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -5022,7 +5022,7 @@ MonoBehaviour:
   m_Text: 'Number of Na Ions
 
 
-    0          15         30'
+    0          50         100'
 --- !u!222 &778202520
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7270,7 +7270,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.01, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7882,9 +7882,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1566946685}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 30
+  m_MaxValue: 100
   m_WholeNumbers: 1
-  m_Value: 15
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -8332,8 +8332,8 @@ RectTransform:
   m_Father: {fileID: 2008019406}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.01, y: 0}
+  m_AnchorMax: {x: 0.01, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9029,8 +9029,8 @@ RectTransform:
   m_Father: {fileID: 1111550321}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.01, y: 0}
+  m_AnchorMax: {x: 0.01, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9241,7 +9241,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 30
@@ -9735,8 +9735,8 @@ RectTransform:
   m_Father: {fileID: 59004809}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.01, y: 0}
+  m_AnchorMax: {x: 0.01, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9796,7 +9796,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1701472102}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 352.4547, y: -85.29581, z: -438.01624}
+  m_LocalPosition: {x: 330, y: -100, z: -438.01624}
   m_LocalScale: {x: 2.0461812, y: 2.0461812, z: 2.0461812}
   m_Children:
   - {fileID: 1610738393}
@@ -10388,7 +10388,7 @@ MonoBehaviour:
   m_Text: 'Number of Cl Ions
 
 
-    0          15         30'
+    0          50         100'
 --- !u!222 &1781207609
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10667,7 +10667,7 @@ MonoBehaviour:
   m_Text: 'Number of K Ions
 
 
-    0          15         30'
+    0          50         100'
 --- !u!222 &1819419898
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10791,7 +10791,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.01, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11884,8 +11884,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9511719, y: 2.0000005, z: 2.0000002}
-  m_Center: {x: -0.52441406, y: 0, z: 0}
+  m_Size: {x: 0.90219116, y: 2.0000005, z: 2.0000002}
+  m_Center: {x: -0.5489044, y: 0, z: 0}
 --- !u!65 &1991121108
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11896,8 +11896,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 0.9025924, z: 2.0000002}
-  m_Center: {x: 0, y: 0.54870415, z: 1.7347546e-14}
+  m_Size: {x: 2, y: 0.80673677, z: 2.0000002}
+  m_Center: {x: 0, y: 0.596632, z: 6.4500136e-15}
 --- !u!65 &1991121109
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11908,8 +11908,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 0.9066732, z: 2.0000002}
-  m_Center: {x: 0, y: -0.54666376, z: -1.7811477e-14}
+  m_Size: {x: 2, y: 0.8050955, z: 2.0000002}
+  m_Center: {x: 0, y: -0.59745264, z: -6.2634224e-15}
 --- !u!65 &1991121110
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11920,8 +11920,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.95199585, y: 2.0000005, z: 2.0000002}
-  m_Center: {x: 0.5240021, y: -0, z: 0}
+  m_Size: {x: 0.9017639, y: 2.0000005, z: 2.0000002}
+  m_Center: {x: 0.54911804, y: -0, z: 0}
 --- !u!1 &1996238315
 GameObject:
   m_ObjectHideFlags: 0
@@ -12815,7 +12815,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: -30
