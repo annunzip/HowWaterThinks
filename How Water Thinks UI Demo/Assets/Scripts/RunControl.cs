@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RunControl : MonoBehaviour {
 
@@ -15,6 +16,11 @@ public class RunControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+    	Debug.Log(sceneName);
+
+        if (sceneName == "Scene 3"){
 
         RemoveAllMolecules();
         //Debug.Log("ConstructChannel Membrane");
@@ -32,6 +38,16 @@ public class RunControl : MonoBehaviour {
         GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value = GameObject.FindGameObjectsWithTag("SodiumAtom").Length;
         GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value = GameObject.FindGameObjectsWithTag("ChlorineAtom").Length;
         GameObject.FindGameObjectWithTag("NumKIons").GetComponent<Slider>().value = GameObject.FindGameObjectsWithTag("PotassiumAtom").Length;
+    	}
+    	else if(sceneName == "Scene 1"){
+    		Debug.Log("test");
+    		RemoveAllMolecules();
+        	GameObject atoms = GameObject.FindGameObjectWithTag("Atoms");
+        	atoms.GetComponent<CreateAtoms>().StartCreatingMolecules(1, 1);
+        	RemoveAllMolecules();
+            GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 100, 0, 0);
+
+    	}
     }
 
 
