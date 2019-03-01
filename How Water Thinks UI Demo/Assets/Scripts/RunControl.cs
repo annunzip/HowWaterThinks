@@ -20,9 +20,8 @@ public class RunControl : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        Debug.Log(sceneName);
 
-        if (sceneName == "Scene 3")
+        if (sceneName == "Scene 3" || sceneName == "Scene 2")
         {
 
             RemoveAllMolecules();

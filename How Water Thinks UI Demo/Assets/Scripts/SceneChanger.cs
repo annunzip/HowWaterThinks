@@ -21,7 +21,6 @@ public class SceneChanger : MonoBehaviour {
 
     public void PrevScene()
     {
-        Debug.Log("fkdslhfka");
         int prevSceneIndex = SceneManager.GetActiveScene().buildIndex - 1;
         if (prevSceneIndex >= 0)
         {
