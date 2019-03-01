@@ -24,6 +24,8 @@ TagManager:
   - VoltmeterTextTop
   - test
   - VoltmeterTextBottom
+  - NextBtn
+  - PrevBtn
   layers:
   - Default
   - TransparentFX

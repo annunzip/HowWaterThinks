@@ -18,9 +18,10 @@ public class RunControl : MonoBehaviour {
 	void Start () {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-    	Debug.Log(sceneName);
+        //Debug.Log(sceneName);
+        Debug.Log(SceneManager.GetActiveScene().buildIndex);
 
-        if (sceneName == "Scene 3"){
+        if (sceneName == "Scene 3" || sceneName == "Scene 2") {
 
         RemoveAllMolecules();
         //Debug.Log("ConstructChannel Membrane");
@@ -39,8 +40,7 @@ public class RunControl : MonoBehaviour {
         GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value = GameObject.FindGameObjectsWithTag("ChlorineAtom").Length;
         GameObject.FindGameObjectWithTag("NumKIons").GetComponent<Slider>().value = GameObject.FindGameObjectsWithTag("PotassiumAtom").Length;
     	}
-    	else if(sceneName == "Scene 1"){
-    		Debug.Log("test");
+    	else if(sceneName == "Scene 1") {
     		RemoveAllMolecules();
         	GameObject atoms = GameObject.FindGameObjectWithTag("Atoms");
         	atoms.GetComponent<CreateAtoms>().StartCreatingMolecules(1, 1);
@@ -50,9 +50,7 @@ public class RunControl : MonoBehaviour {
     	}
     }
 
-
-
-	void RemoveAllMolecules(){
+    void RemoveAllMolecules(){
 
 		GameObject[] sodiumAtomClones = GameObject.FindGameObjectsWithTag("SodiumAtom");
         GameObject[] chlorineAtomClones = GameObject.FindGameObjectsWithTag("ChlorineAtom");
