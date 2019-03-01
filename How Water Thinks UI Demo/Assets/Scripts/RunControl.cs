@@ -40,7 +40,6 @@ public class RunControl : MonoBehaviour {
         GameObject.FindGameObjectWithTag("NumKIons").GetComponent<Slider>().value = GameObject.FindGameObjectsWithTag("PotassiumAtom").Length;
     	}
     	else if(sceneName == "Scene 1"){
-    		Debug.Log("test");
     		RemoveAllMolecules();
         	GameObject atoms = GameObject.FindGameObjectWithTag("Atoms");
         	atoms.GetComponent<CreateAtoms>().StartCreatingMolecules(1, 1);
