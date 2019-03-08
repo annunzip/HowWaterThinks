@@ -19,13 +19,12 @@ TagManager:
   - clToggle
   - kToggle
   - Voltage
-  - VoltageOutsideCounterText
-  - VoltageInsideCounterText
   - VoltmeterTextTop
   - test
   - VoltmeterTextBottom
   - NextBtn
   - PrevBtn
+  - DeltaVCountText
   layers:
   - Default
   - TransparentFX

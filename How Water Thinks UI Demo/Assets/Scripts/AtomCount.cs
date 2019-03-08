@@ -96,15 +96,23 @@ public class AtomCount : MonoBehaviour {
         GameObject.FindGameObjectWithTag("AtomsOutsideCounterText").GetComponent<Text>().text = "Atoms Outside: " + numAtomsOuter;
         GameObject.FindGameObjectWithTag("AtomsInsideCounterText").GetComponent<Text>().text = "Atoms Inside: " + numAtomsInner;
 
+        /*Old voltage outer code block
         if (voltageOuter > 0) GameObject.FindGameObjectWithTag("VoltageOutsideCounterText").GetComponent<Text>().text = "Voltage Outside: " + System.Math.Round(Mathf.Log(voltageOuter), 2) + " mV";
         else if (voltageOuter < 0) GameObject.FindGameObjectWithTag("VoltageOutsideCounterText").GetComponent<Text>().text = "Voltage Outside: -" + System.Math.Round(Mathf.Log(-1 * voltageOuter), 2) + " mV";
         else GameObject.FindGameObjectWithTag("VoltageOutsideCounterText").GetComponent<Text>().text = "Voltage Outside: 0 mV";
+        */
 
+        /*Old voltage inner code block
         if (voltageInner > 0) GameObject.FindGameObjectWithTag("VoltageInsideCounterText").GetComponent<Text>().text = "Voltage Inside: " + System.Math.Round(Mathf.Log(voltageInner), 2) + " mV";
         else if (voltageInner < 0) GameObject.FindGameObjectWithTag("VoltageInsideCounterText").GetComponent<Text>().text = "Voltage Inside: -" + System.Math.Round(Mathf.Log(-1 * voltageInner), 2) + " mV";
         else GameObject.FindGameObjectWithTag("VoltageInsideCounterText").GetComponent<Text>().text = "Voltage Inside: 0 mV";
-        //Debug.Log("voltageOuter = " + voltageOuter);
-        //Debug.Log("voltageInner = " + voltageInner);
+        */
+
+        string deltaVCountText;
+        if (voltage > 0) deltaVCountText = "+" + System.Math.Round(Mathf.Log(voltage), 2);
+        else if (voltage < 0) deltaVCountText = "-" + System.Math.Round(Mathf.Log(-voltage), 2);
+        else deltaVCountText = "0.00";
+        GameObject.FindGameObjectWithTag("DeltaVCountText").GetComponent<Text>().text = "ΔV = " + deltaVCountText + " mV";
 
         //Handling voltage
         float maxVoltage = GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length;
@@ -112,10 +120,6 @@ public class AtomCount : MonoBehaviour {
         else GameObject.FindGameObjectWithTag("VoltmeterTextTop").GetComponent<Text>().text = "0 mV";
         if (GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length != 0) GameObject.FindGameObjectWithTag("VoltmeterTextBottom").GetComponent<Text>().text = "-" + System.Math.Round(Mathf.Log(GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length), 2).ToString() + " mV";
         else GameObject.FindGameObjectWithTag("VoltmeterTextBottom").GetComponent<Text>().text = "0 mV";
-        /*if (voltage > 0) GameObject.FindGameObjectWithTag("Voltage").GetComponent<Text>().color = new Color((voltage/maxVoltage*255f)/255f, 0f/255f, 0f/255f);
-        else if (voltage < 0) GameObject.FindGameObjectWithTag("Voltage").GetComponent<Text>().color = new Color(0f/0f, 0f/0f, (-voltage/maxVoltage*255f)/255f);
-        else GameObject.FindGameObjectWithTag("Voltage").GetComponent<Text>().color = new Color(0f/255f, 0f/255f, 0f/255f);
-        Debug.Log(voltage);*/
 
         //Setting voltage slider values
         GameObject.FindGameObjectWithTag("Voltage").GetComponent<Slider>().minValue = -Mathf.Log(maxVoltage);
@@ -124,24 +128,6 @@ public class AtomCount : MonoBehaviour {
         if (voltage > 0) GameObject.FindGameObjectWithTag("Voltage").GetComponent<Slider>().value = Mathf.Log(voltage);
         else if (voltage < 0) GameObject.FindGameObjectWithTag("Voltage").GetComponent<Slider>().value = -Mathf.Log(-voltage);
         else GameObject.FindGameObjectWithTag("Voltage").GetComponent<Slider>().value = 0;
-
-        /*
-        //Gradient creation and application
-        Gradient grad = new Gradient();
-        GradientColorKey[] colorKey = new GradientColorKey[2];
-        colorKey[0].color = Color.blue;
-        colorKey[0].time = 0.0f;
-        colorKey[1].color = Color.red;
-        colorKey[1].time = 1.0f;
-
-        GradientAlphaKey[] alphaKey = new GradientAlphaKey[2];
-        alphaKey[0].alpha = 1.0f;
-        alphaKey[0].time = 0.0f;
-        alphaKey[1].alpha = 0.0f;
-        alphaKey[1].time = 1.0f;
-
-        grad.SetKeys(colorKey, alphaKey);
-        */
 
         if (voltage < 0) GameObject.FindGameObjectWithTag("Voltage").GetComponentInChildren<Image>().color = new Color((-voltage / maxVoltage * 255f) / 255f, 0f / 255f, 0f / 255f);
         else if (voltage > 0) GameObject.FindGameObjectWithTag("Voltage").GetComponentInChildren<Image>().color = new Color(0f / 0f, 0f / 0f, (voltage / maxVoltage * 255f) / 255f);
