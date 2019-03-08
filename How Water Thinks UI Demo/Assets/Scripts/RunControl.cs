@@ -21,7 +21,7 @@ public class RunControl : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        if (sceneName == "Scene 3" || sceneName == "Scene 2")
+        if (sceneName == "Scene 3")
         {
 
             RemoveAllMolecules();
@@ -50,6 +50,15 @@ public class RunControl : MonoBehaviour
             GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 100, 0, 0);
 
         }
+        else if (sceneName == "Scene 2")
+        {
+            RemoveAllMolecules();
+            GameObject atoms = GameObject.FindGameObjectWithTag("Atoms");
+            atoms.GetComponent<CreateAtoms>().StartCreatingMolecules(1, 1);
+            RemoveAllMolecules();
+            GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 30, 0, 5);
+
+        }
     }
 
 
@@ -59,6 +68,7 @@ public class RunControl : MonoBehaviour
 
         GameObject[] sodiumAtomClones = GameObject.FindGameObjectsWithTag("SodiumAtom");
         GameObject[] chlorineAtomClones = GameObject.FindGameObjectsWithTag("ChlorineAtom");
+        GameObject[] potassiumAtomClones = GameObject.FindGameObjectsWithTag("PotassiumAtom");
 
         foreach (GameObject atomClone in sodiumAtomClones)
         {
@@ -66,6 +76,11 @@ public class RunControl : MonoBehaviour
         }
 
         foreach (GameObject atomClone in chlorineAtomClones)
+        {
+            Destroy(atomClone);
+        }
+
+        foreach (GameObject atomClone in potassiumAtomClones)
         {
             Destroy(atomClone);
         }

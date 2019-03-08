@@ -39,7 +39,7 @@ public class AtomCollisionHandler : MonoBehaviour {
 
     public void OnTriggerEnter(Collider atom)
     {
-        if (atom.gameObject.tag == "PotassiumAtom")
+        if (atom.gameObject.tag == "PotassiumAtom" || atom.gameObject.tag == "ChlorineAtom")
         {
             Vector3 vel = atom.gameObject.GetComponent<Rigidbody>().velocity;
             if (atom.GetComponent<Rigidbody>() != null) atom.GetComponent<Rigidbody>().velocity = -vel;

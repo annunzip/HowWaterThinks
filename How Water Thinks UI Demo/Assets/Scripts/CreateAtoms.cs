@@ -62,6 +62,25 @@ public class CreateAtoms : MonoBehaviour {
             // Set initial velocity
             atomclone.GetComponent<Rigidbody>().velocity = Vector3.up;
         }
+
+         for (int i = 0; i < numberOfPotassiumAtoms; i++)
+        {
+
+            //Debug.Log ("Entering CreateNAtoms");
+            // Create an ion in a box
+            atomTransform.position = CreateAtomPosition(L, l);
+            Vector3 atomPosition = atomTransform.position;
+
+
+
+            // Create a clone of atom at atomPosition
+            GameObject atomclone = Instantiate(potassiumAtom, kAtomPosition, Quaternion.identity);
+
+
+
+            // Set initial velocity
+            atomclone.GetComponent<Rigidbody>().velocity = Vector3.up;
+        }
     }
 
     public void AddNAtoms(float L, float l, int numNaAtoms, int numClAtoms, int numKAtoms)
