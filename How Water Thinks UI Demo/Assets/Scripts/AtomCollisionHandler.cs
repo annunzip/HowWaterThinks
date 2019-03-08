@@ -52,7 +52,7 @@ public class AtomCollisionHandler : MonoBehaviour {
         float electricField = -(GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltageOuter() - GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltage()); //-(VO - VI) / h;
         //Debug.Log(atom.GetComponent<Rigidbody>());
         if (atom.GetComponent<Rigidbody>() != null) atom.GetComponent<Rigidbody>().AddForce(transform.up * charge * electricField);
-       /* if (atom.gameObject.tag == "PotassiumAtom")
+       /*if (atom.gameObject.tag == "PotassiumAtom")
         {
             Vector3 vel = atom.gameObject.GetComponent<Rigidbody>().velocity;
             if (atom.GetComponent<Rigidbody>() != null) atom.GetComponent<Rigidbody>().velocity = -vel;

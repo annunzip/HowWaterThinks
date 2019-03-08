@@ -10,6 +10,8 @@ public class AtomCount : MonoBehaviour {
     public float voltageOuter;
     public float voltageInner;
     public float voltage;
+    //public float minVoltage;
+    //public float maxVoltage;
 
     // Use this for initialization
     void Start () {
@@ -39,6 +41,9 @@ public class AtomCount : MonoBehaviour {
         voltageOuter = 0;
         voltageInner = 0;
         voltage = 0;
+        //maxVoltage = 0;
+        //minVoltage = 0;
+
 
         foreach (GameObject atom in GameObject.FindGameObjectsWithTag("SodiumAtom")) {
             if (atom.transform.position.y > 214.95)

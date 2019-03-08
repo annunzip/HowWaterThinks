@@ -138,6 +138,16 @@ public class RunControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(GameObject.FindGameObjectsWithTag("PotassiumAtom").Length);
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            foreach (GameObject atom in GameObject.FindGameObjectsWithTag("PotassiumAtom"))
+            {
+                if (atom.transform.position.y > 214.95)
+                {
+                    Destroy(atom);
+                    GameObject.Find("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 0, 0, 1);
+                }
+            }
+        }
     }
 }
