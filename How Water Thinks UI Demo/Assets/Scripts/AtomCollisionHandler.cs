@@ -37,12 +37,26 @@ public class AtomCollisionHandler : MonoBehaviour {
         }
     }
 
+    public void OnTriggerEnter(Collider atom)
+    {
+        if (atom.gameObject.tag == "PotassiumAtom")
+        {
+            Vector3 vel = atom.gameObject.GetComponent<Rigidbody>().velocity;
+            if (atom.GetComponent<Rigidbody>() != null) atom.GetComponent<Rigidbody>().velocity = -vel;
+        } 
+    }
+
     public void OnTriggerStay(Collider atom)
     {
         float charge = 1f;
         float electricField = -(GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltageOuter() - GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltage()); //-(VO - VI) / h;
         //Debug.Log(atom.GetComponent<Rigidbody>());
         if (atom.GetComponent<Rigidbody>() != null) atom.GetComponent<Rigidbody>().AddForce(transform.up * charge * electricField);
+       /* if (atom.gameObject.tag == "PotassiumAtom")
+        {
+            Vector3 vel = atom.gameObject.GetComponent<Rigidbody>().velocity;
+            if (atom.GetComponent<Rigidbody>() != null) atom.GetComponent<Rigidbody>().velocity = -vel;
+        } */
     }
 
     public void OnTriggerExit(Collider atom)
@@ -51,6 +65,11 @@ public class AtomCollisionHandler : MonoBehaviour {
         float electricField = -(GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltageOuter() - GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltage()); //-(VO - VI) / h;
         //Debug.Log(atom.GetComponent<Rigidbody>());
         if (atom.GetComponent<Rigidbody>() != null) atom.GetComponent<Rigidbody>().AddForce(transform.up * charge * electricField);
+        /* if (atom.gameObject.tag == "PotassiumAtom")
+        {
+            Vector3 vel = atom.gameObject.GetComponent<Rigidbody>().velocity;
+            if (atom.GetComponent<Rigidbody>() != null) atom.GetComponent<Rigidbody>().velocity = -vel;
+        } */
     }
 
     // Update is called once per frame

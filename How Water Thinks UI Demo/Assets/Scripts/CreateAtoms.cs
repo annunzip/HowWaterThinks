@@ -10,6 +10,7 @@ public class CreateAtoms : MonoBehaviour {
     public GameObject chlorineAtom;
     public int numberOfPotassiumAtoms;
     public GameObject potassiumAtom;
+    public Vector3 kAtomPosition;
     float freeEnergy;
     Transform atomTransform;
 
@@ -115,7 +116,7 @@ public class CreateAtoms : MonoBehaviour {
 
 
             // Create a clone of atom at atomPosition
-            GameObject atomclone = Instantiate(potassiumAtom, atomPosition, Quaternion.identity);
+            GameObject atomclone = Instantiate(potassiumAtom, kAtomPosition, Quaternion.identity);
 
 
 
@@ -162,6 +163,7 @@ public class CreateAtoms : MonoBehaviour {
 
         // Create a position vector
         Vector3 atomPosition = new Vector3(661 + xatom, 215 + yatom, -205 + zatom);
+        kAtomPosition = new Vector3(661+ xatom, 214 + yatom, -205 + zatom);
 
         //Debug.Log(atomPosition);
         return atomPosition;
@@ -184,6 +186,8 @@ public class CreateAtoms : MonoBehaviour {
 
         return plusMinus;
     }
+
+ 
 
     // Update is called once per frame
     void Update () {
