@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class sliderReaction : MonoBehaviour {
 
@@ -15,6 +16,8 @@ public class sliderReaction : MonoBehaviour {
 
     public void HandleNaSliderChange(Slider naSlider)
     {
+        if (GameObject.FindGameObjectsWithTag("NumClIons").Length > 0 && GameObject.FindGameObjectsWithTag("NumNaIons").Length > 0) GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value = GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value;
+
         if (GameObject.FindGameObjectWithTag("naToggle").GetComponent<Toggle>().isOn)
         {
             //GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().numberOfChlorineAtoms = (int)ionSlider.value;
@@ -27,6 +30,7 @@ public class sliderReaction : MonoBehaviour {
             {
                 GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, (int)Math.Floor(naSlider.value - numAtoms), 0, 0);
                 numAtoms++;
+
 
             }
             else if (numAtoms > (int)(naSlider.value))
@@ -43,6 +47,8 @@ public class sliderReaction : MonoBehaviour {
 
     public void HandleClSliderChange(Slider clSlider)
     {
+        if (GameObject.FindGameObjectsWithTag("NumClIons").Length > 0 && GameObject.FindGameObjectsWithTag("NumNaIons").Length > 0) GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value = GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value;
+
         if (GameObject.FindGameObjectWithTag("clToggle").GetComponent<Toggle>().isOn)
         {
             int numAtoms = GameObject.FindGameObjectsWithTag("ChlorineAtom").Length;
@@ -91,6 +97,12 @@ public class sliderReaction : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        //Debug.Log("Test2");
+        /*
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value = GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value * 30;
+            GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value = GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value / 30;
+        }
+        */
     }
 } 

@@ -21,6 +21,8 @@ public class RunControl : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
+        GameObject atoms = GameObject.FindGameObjectWithTag("Atoms");
+
         if (sceneName == "Scene 3")
         {
 
@@ -33,31 +35,29 @@ public class RunControl : MonoBehaviour
             // Construct the channel that goes in the hole in the membrane
             //ConstructChannel(channelSideLength);
 
-            GameObject atoms = GameObject.FindGameObjectWithTag("Atoms");
             //atoms.GetComponent<CreateAtoms>().StartCreatingMolecules(boxSideLength, channelSideLength);
             atoms.GetComponent<CreateAtoms>().StartCreatingMolecules(1, 1);
 
-            GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value = GameObject.FindGameObjectsWithTag("SodiumAtom").Length;
-            GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value = GameObject.FindGameObjectsWithTag("ChlorineAtom").Length;
-            GameObject.FindGameObjectWithTag("NumKIons").GetComponent<Slider>().value = GameObject.FindGameObjectsWithTag("PotassiumAtom").Length;
+            GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value = atoms.GetComponent<CreateAtoms>().numberOfSodiumAtoms;
+            GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value = atoms.GetComponent<CreateAtoms>().numberOfChlorineAtoms;
+            GameObject.FindGameObjectWithTag("NumKIons").GetComponent<Slider>().value = atoms.GetComponent<CreateAtoms>().numberOfPotassiumAtoms;
         }
         else if (sceneName == "Scene 1")
         {
             RemoveAllMolecules();
-            GameObject atoms = GameObject.FindGameObjectWithTag("Atoms");
             atoms.GetComponent<CreateAtoms>().StartCreatingMolecules(1, 1);
             RemoveAllMolecules();
-            GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 100, 0, 0);
-
+            GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, atoms.GetComponent<CreateAtoms>().numberOfSodiumAtoms, atoms.GetComponent<CreateAtoms>().numberOfChlorineAtoms, atoms.GetComponent<CreateAtoms>().numberOfPotassiumAtoms);
         }
         else if (sceneName == "Scene 2")
         {
             RemoveAllMolecules();
-            GameObject atoms = GameObject.FindGameObjectWithTag("Atoms");
             atoms.GetComponent<CreateAtoms>().StartCreatingMolecules(1, 1);
             RemoveAllMolecules();
-            GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 30, 0, 5);
+            GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, atoms.GetComponent<CreateAtoms>().numberOfSodiumAtoms, atoms.GetComponent<CreateAtoms>().numberOfChlorineAtoms, atoms.GetComponent<CreateAtoms>().numberOfPotassiumAtoms);
 
+            GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value = atoms.GetComponent<CreateAtoms>().numberOfSodiumAtoms;
+            GameObject.FindGameObjectWithTag("NumKIons").GetComponent<Slider>().value = atoms.GetComponent<CreateAtoms>().numberOfPotassiumAtoms;
         }
     }
 
@@ -138,6 +138,6 @@ public class RunControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log(GameObject.FindGameObjectsWithTag("PotassiumAtom").Length);
     }
 }
