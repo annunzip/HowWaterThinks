@@ -108,17 +108,18 @@ public class AtomCount : MonoBehaviour {
         else GameObject.FindGameObjectWithTag("VoltageInsideCounterText").GetComponent<Text>().text = "Voltage Inside: 0 mV";
         */
 
+        float rTF = 14.06f;
         string deltaVCountText;
-        if (voltage > 0) deltaVCountText = "+" + System.Math.Round(Mathf.Log(voltage), 2);
-        else if (voltage < 0) deltaVCountText = "-" + System.Math.Round(Mathf.Log(-voltage), 2);
+        if (voltage > 0) deltaVCountText = "+" + System.Math.Round(rTF * Mathf.Log(voltage), 2);
+        else if (voltage < 0) deltaVCountText = "-" + System.Math.Round(rTF * Mathf.Log(-voltage), 2);
         else deltaVCountText = "0.00";
         if (GameObject.FindGameObjectWithTag("DeltaVCountText") != null) GameObject.FindGameObjectWithTag("DeltaVCountText").GetComponent<Text>().text = "ΔV = " + deltaVCountText + " mV";
 
         //Handling voltage
         float maxVoltage = GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length;
-        if (GameObject.FindGameObjectWithTag("VoltmeterTextTop") != null && GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length != 0) GameObject.FindGameObjectWithTag("VoltmeterTextTop").GetComponent<Text>().text = "+" + System.Math.Round(Mathf.Log(GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length), 2).ToString() + " mV";
+        if (GameObject.FindGameObjectWithTag("VoltmeterTextTop") != null && GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length != 0) GameObject.FindGameObjectWithTag("VoltmeterTextTop").GetComponent<Text>().text = "+" + System.Math.Round(rTF * Mathf.Log(GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length), 2).ToString() + " mV";
         else if (GameObject.FindGameObjectWithTag("VoltmeterTextTop") != null) GameObject.FindGameObjectWithTag("VoltmeterTextTop").GetComponent<Text>().text = "0 mV";
-        if (GameObject.FindGameObjectWithTag("VoltmeterTextBottom") != null && GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length != 0) GameObject.FindGameObjectWithTag("VoltmeterTextBottom").GetComponent<Text>().text = "-" + System.Math.Round(Mathf.Log(GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length), 2).ToString() + " mV";
+        if (GameObject.FindGameObjectWithTag("VoltmeterTextBottom") != null && GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length != 0) GameObject.FindGameObjectWithTag("VoltmeterTextBottom").GetComponent<Text>().text = "-" + System.Math.Round(rTF * Mathf.Log(GameObject.FindGameObjectsWithTag("SodiumAtom").Length + GameObject.FindGameObjectsWithTag("ChlorineAtom").Length + GameObject.FindGameObjectsWithTag("PotassiumAtom").Length), 2).ToString() + " mV";
         else if (GameObject.FindGameObjectWithTag("VoltmeterTextBottom") != null) GameObject.FindGameObjectWithTag("VoltmeterTextBottom").GetComponent<Text>().text = "0 mV";
 
         //Setting voltage slider values
@@ -126,11 +127,11 @@ public class AtomCount : MonoBehaviour {
         {
             Slider voltageSlider = GameObject.FindGameObjectWithTag("Voltage").GetComponent<Slider>();
 
-            voltageSlider.minValue = -Mathf.Log(maxVoltage);
-            voltageSlider.maxValue = Mathf.Log(maxVoltage);
+            voltageSlider.minValue = rTF * -Mathf.Log(maxVoltage);
+            voltageSlider.maxValue = rTF * Mathf.Log(maxVoltage);
 
-            if (voltage > 0) voltageSlider.value = Mathf.Log(voltage);
-            else if (voltage < 0) voltageSlider.value = -Mathf.Log(-voltage);
+            if (voltage > 0) voltageSlider.value = rTF * Mathf.Log(voltage);
+            else if (voltage < 0) voltageSlider.value = rTF * -Mathf.Log(-voltage);
             else voltageSlider.value = 0;
 
             if (voltage < 0) GameObject.FindGameObjectWithTag("Voltage").GetComponentInChildren<Image>().color = new Color((-voltage / maxVoltage * 255f) / 255f, 0f / 255f, 0f / 255f);
