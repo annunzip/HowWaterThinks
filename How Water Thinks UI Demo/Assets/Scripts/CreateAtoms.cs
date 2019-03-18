@@ -53,12 +53,19 @@ public class CreateAtoms : MonoBehaviour {
             Vector3 atomPosition = atomTransform.position;
 
 
-
+            GameObject atomclone;
             // Create a clone of atom at atomPosition
-            GameObject atomclone = Instantiate(chlorineAtom, atomPosition, Quaternion.identity);
+            if (i % 2 == 0)
+            {
+                atomclone = Instantiate(chlorineAtom, kAtomPosition, Quaternion.identity);
+            }
+            else
+            {
+                atomclone = Instantiate(chlorineAtom, atomPosition, Quaternion.identity);
+            }
 
 
-
+      
             // Set initial velocity
             atomclone.GetComponent<Rigidbody>().velocity = Vector3.up;
         }
