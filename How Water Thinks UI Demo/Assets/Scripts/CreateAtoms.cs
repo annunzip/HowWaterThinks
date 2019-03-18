@@ -13,6 +13,7 @@ public class CreateAtoms : MonoBehaviour {
     public Vector3 kAtomPosition;
     float freeEnergy;
     Transform atomTransform;
+    int clSpawnIndicator = 0;
 
     // Use this for initialization
     public void StartCreatingMolecules (float L, float l) {
@@ -122,8 +123,18 @@ public class CreateAtoms : MonoBehaviour {
 
 
 
+            GameObject atomclone;
             // Create a clone of atom at atomPosition
-            GameObject atomclone = Instantiate(chlorineAtom, atomPosition, Quaternion.identity);
+            if (clSpawnIndicator == 1)
+            {
+                atomclone = Instantiate(chlorineAtom, kAtomPosition, Quaternion.identity);
+                clSpawnIndicator = 0;
+            }
+            else
+            {
+                atomclone = Instantiate(chlorineAtom, atomPosition, Quaternion.identity);
+                clSpawnIndicator = 1;
+            }
 
 
 
