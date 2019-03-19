@@ -36,22 +36,22 @@ public class Spherical_Camera : MonoBehaviour
             transform.RotateAround(point, new Vector3(0.0f, -1.0f, 0.0f), 20 * Time.deltaTime * rotatespeed);
         }
 
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Keypad8))
+        if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.Keypad7))
         {
             transform.RotateAround(point, new Vector3(0.0f, 0.0f, -1.0f), 20 * Time.deltaTime * rotatespeed);
         }
 
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.Keypad5))
+        if (Input.GetKey(KeyCode.E) || Input.GetKey(KeyCode.Keypad9))
         {
             transform.RotateAround(point, new Vector3(0.0f, 0.0f, 1.0f), 20 * Time.deltaTime * rotatespeed);
         }
 
-        if (Input.GetKey(KeyCode.E) || Input.GetKey(KeyCode.Keypad9))
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.Keypad5))
         {
             transform.RotateAround(point, new Vector3(1.0f, 0.0f, 0.0f), 20 * Time.deltaTime * rotatespeed);
         }
 
-        if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.Keypad7))
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Keypad8))
         {
             transform.RotateAround(point, new Vector3(-1.0f, 0.0f, 0.0f), 20 * Time.deltaTime * rotatespeed);
         }
