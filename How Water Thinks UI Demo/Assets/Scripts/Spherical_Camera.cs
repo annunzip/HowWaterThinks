@@ -22,6 +22,12 @@ public class Spherical_Camera : MonoBehaviour
         startPosition = transform.position;
     }
 
+    public void ResetCamera()
+    {
+        transform.rotation = startRotation;
+        transform.position = startPosition;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -68,9 +74,7 @@ public class Spherical_Camera : MonoBehaviour
 
         if (Input.GetKey(KeyCode.R))
         {
-            //transform.LookAt(point);
-            transform.rotation = startRotation;
-            transform.position = startPosition;
+            ResetCamera();
         }
     }
 }
