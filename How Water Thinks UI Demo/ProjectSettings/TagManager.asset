@@ -25,6 +25,9 @@ TagManager:
   - NextBtn
   - PrevBtn
   - DeltaVCountText
+  - NaForce
+  - ClForce
+  - KForce
   layers:
   - Default
   - TransparentFX

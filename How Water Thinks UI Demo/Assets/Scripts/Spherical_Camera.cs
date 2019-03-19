@@ -34,32 +34,32 @@ public class Spherical_Camera : MonoBehaviour
 
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.Keypad6))
         {
-            transform.RotateAround(point, new Vector3(0.0f, 1.0f, 0.0f), 20 * Time.deltaTime * rotatespeed);
+            transform.RotateAround(point, new Vector3(0.0f, -1.0f, 0.0f), 20 * Time.deltaTime * rotatespeed);
         }
 
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.Keypad4))
         {
-            transform.RotateAround(point, new Vector3(0.0f, -1.0f, 0.0f), 20 * Time.deltaTime * rotatespeed);
+            transform.RotateAround(point, new Vector3(0.0f, 1.0f, 0.0f), 20 * Time.deltaTime * rotatespeed);
         }
 
         if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.Keypad7))
         {
-            transform.RotateAround(point, new Vector3(0.0f, 0.0f, -1.0f), 20 * Time.deltaTime * rotatespeed);
+            transform.RotateAround(point, new Vector3(0.0f, 0.0f, 1.0f), 20 * Time.deltaTime * rotatespeed);
         }
 
         if (Input.GetKey(KeyCode.E) || Input.GetKey(KeyCode.Keypad9))
         {
-            transform.RotateAround(point, new Vector3(0.0f, 0.0f, 1.0f), 20 * Time.deltaTime * rotatespeed);
+            transform.RotateAround(point, new Vector3(0.0f, 0.0f, -1.0f), 20 * Time.deltaTime * rotatespeed);
         }
 
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.Keypad5))
         {
-            transform.RotateAround(point, new Vector3(1.0f, 0.0f, 0.0f), 20 * Time.deltaTime * rotatespeed);
+            transform.RotateAround(point, new Vector3(-1.0f, 0.0f, 0.0f), 20 * Time.deltaTime * rotatespeed);
         }
 
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Keypad8))
         {
-            transform.RotateAround(point, new Vector3(-1.0f, 0.0f, 0.0f), 20 * Time.deltaTime * rotatespeed);
+            transform.RotateAround(point, new Vector3(1.0f, 0.0f, 0.0f), 20 * Time.deltaTime * rotatespeed); 
         }
 
         if (Input.GetKey(KeyCode.KeypadMinus) || Input.GetKey(KeyCode.Minus))

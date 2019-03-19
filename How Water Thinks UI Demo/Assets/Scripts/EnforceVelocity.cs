@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AddVelocity : MonoBehaviour {
+public class EnforceVelocity : MonoBehaviour {
 
 	Rigidbody rb;
 	public float velocityMultiplier = 0.0f;
