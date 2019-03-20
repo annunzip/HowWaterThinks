@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class toggleReaction : MonoBehaviour {
 
+    public GameObject membrane0;
+    public GameObject membrane1;
+    public GameObject NaForce;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -42,6 +46,22 @@ public class toggleReaction : MonoBehaviour {
         else
         {
             foreach (GameObject atom in GameObject.FindGameObjectsWithTag("PotassiumAtom")) Destroy(atom);
+        }
+    }
+
+    public void HandleMembraneToggle(Toggle membraneToggle)
+    {
+        if (membraneToggle.isOn == true)
+        {
+            membrane0.SetActive(false);
+            membrane1.SetActive(true);
+            NaForce.SetActive(true);
+        }
+        else
+        {
+            membrane1.SetActive(false);
+            NaForce.SetActive(false);
+            membrane0.SetActive(true);
         }
     }
 

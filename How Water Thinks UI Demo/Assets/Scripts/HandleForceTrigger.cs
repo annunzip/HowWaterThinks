@@ -18,7 +18,7 @@ public class HandleForceTrigger : MonoBehaviour {
         {
             if (c.gameObject.tag == "SodiumAtom")
             {
-                c.gameObject.GetComponent<Renderer>().material.mainTexture = temp;
+                //c.gameObject.GetComponent<Renderer>().material.mainTexture = temp;
             } else if (c.gameObject.tag == "ChlorineAtom")
             {
                 Debug.Log("Denied Chlorine");
@@ -26,49 +26,48 @@ public class HandleForceTrigger : MonoBehaviour {
                 //c.gameObject.GetComponent<Renderer>().material.mainTexture = temp1;
                 if (c.gameObject.transform.position.y > 214.95)
                 {
-                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 1000, 0));
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
                 } else
                 {
-                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -1000, 0));
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
                 }
             } else if (c.gameObject.tag == "PotassiumAtom")
             {
                 if (c.gameObject.transform.position.y > 214.95)
                 {
-                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 1000, 0));
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
                 }
                 else
                 {
-                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -1000, 0));
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
                 }
             }
         } else if (this.tag == "ClForce")
         {
-            Debug.Log("entered");
             if (c.gameObject.tag == "SodiumAtom")
             {
                 if (c.gameObject.transform.position.y > 214.95)
                 {
-                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 1000, 0));
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
                 }
                 else
                 {
-                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -1000, 0));
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
                 }
             }
             else if (c.gameObject.tag == "ChlorineAtom")
             {
-                c.gameObject.GetComponent<Renderer>().material.mainTexture = temp;
+                //c.gameObject.GetComponent<Renderer>().material.mainTexture = temp;
             }
             else if (c.gameObject.tag == "PotassiumAtom")
             {
                 if (c.gameObject.transform.position.y > 214.95)
                 {
-                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 1000, 0));
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
                 }
                 else
                 {
-                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -1000, 0));
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
                 }
             }
         } else if (this.tag == "KForce")
@@ -77,11 +76,11 @@ public class HandleForceTrigger : MonoBehaviour {
             {
                 if (c.gameObject.transform.position.y > 214.95)
                 {
-                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 1000, 0));
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
                 }
                 else
                 {
-                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -1000, 0));
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
                 }
             }
             else if (c.gameObject.tag == "ChlorineAtom")
@@ -90,16 +89,16 @@ public class HandleForceTrigger : MonoBehaviour {
                 //c.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
                 if (c.gameObject.transform.position.y > 214.95)
                 {
-                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 1000, 0));
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
                 }
                 else
                 {
-                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -1000, 0));
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
                 }
             }
             else if (c.gameObject.tag == "PotassiumAtom")
             {   
-                c.gameObject.GetComponent<Renderer>().material.mainTexture = temp;
+                //c.gameObject.GetComponent<Renderer>().material.mainTexture = temp;
             }
         }
     }
