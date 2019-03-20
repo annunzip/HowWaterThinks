@@ -6634,7 +6634,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1218439904}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 1, z: 1.0000002}
@@ -6720,10 +6720,10 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1219644787}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 1, z: 1.0000002}
+  m_Size: {x: 1.0000001, y: 0, z: 1.0000002}
   m_Center: {x: 0.000000059604645, y: 0.05, z: -0.00000008940697}
 --- !u!23 &1219644790
 MeshRenderer:
@@ -6731,7 +6731,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1219644787}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6773,12 +6773,13 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1219644787}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 417d55507faa6bf4b95d62197c1ce395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   temp: {fileID: 2800000, guid: 8cfff79641e17cc4e91648bcc7244904, type: 3}
+  temp1: {fileID: 0}
 --- !u!1 &1242425842
 GameObject:
   m_ObjectHideFlags: 0
@@ -8708,13 +8709,14 @@ GameObject:
   - component: {fileID: 1769020125}
   - component: {fileID: 1769020124}
   - component: {fileID: 1769020123}
+  - component: {fileID: 1769020126}
   m_Layer: 0
   m_Name: NaForce
   m_TagString: NaForce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1769020122
 Transform:
   m_ObjectHideFlags: 0
@@ -8722,7 +8724,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1769020121}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0999756, y: 0.1000061, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1000061, z: 0}
   m_LocalScale: {x: 0.39999998, y: 0.049999997, z: 0.39999998}
   m_Children: []
   m_Father: {fileID: 1383374848}
@@ -8735,7 +8737,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1769020121}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 1, z: 1.0000002}
@@ -8782,6 +8784,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1769020121}
   m_Mesh: {fileID: 0}
+--- !u!114 &1769020126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1769020121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 417d55507faa6bf4b95d62197c1ce395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temp: {fileID: 2800000, guid: 8cfff79641e17cc4e91648bcc7244904, type: 3}
+  temp1: {fileID: 0}
 --- !u!1 &1769602160
 GameObject:
   m_ObjectHideFlags: 0

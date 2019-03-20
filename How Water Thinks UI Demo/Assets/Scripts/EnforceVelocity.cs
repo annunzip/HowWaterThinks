@@ -33,7 +33,7 @@ public class EnforceVelocity : MonoBehaviour {
         this.gameObject.GetComponent<Rigidbody>().drag = 0;
         this.gameObject.GetComponent<Rigidbody>().angularDrag = 0;
 
-        float idealVelocity = 1.75f;
+        float idealVelocity = 1f;
         //Debug.Log(this.gameObject.GetComponent<Rigidbody>().velocity);
         this.gameObject.GetComponent<Rigidbody>().velocity = idealVelocity * this.gameObject.GetComponent<Rigidbody>().velocity.normalized;
     }
