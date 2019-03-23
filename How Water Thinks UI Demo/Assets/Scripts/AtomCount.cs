@@ -49,14 +49,14 @@ public class AtomCount : MonoBehaviour {
             if (atom.transform.position.y > 214.95)
             {
                 numAtomsOuter++;
-                voltage++;
-                voltageOuter++;
+                voltage--;
+                voltageOuter--;
             }
             else
             {
                 numAtomsInner++;
-                voltage--;
-                voltageInner++;
+                voltage++;
+                voltageInner--;
             }
         }
         foreach (GameObject atom in GameObject.FindGameObjectsWithTag("ChlorineAtom"))
@@ -64,15 +64,15 @@ public class AtomCount : MonoBehaviour {
             if (atom.transform.position.y > 214.95)
             {
                 numAtomsOuter++;
-                voltage--;
-                voltageOuter--;
+                voltage++;
+                voltageOuter++;
 
             }
             else
             {
                 numAtomsInner++;
-                voltage++;
-                voltageInner--;
+                voltage--;
+                voltageInner++;
             }
 
         }
@@ -81,14 +81,14 @@ public class AtomCount : MonoBehaviour {
             if (atom.transform.position.y > 214.95)
             {
                 numAtomsOuter += 1;
-                voltage++;
-                voltageOuter++;
+                voltage--;
+                voltageOuter--;
             }
             else
             {
                 numAtomsInner += 1;
-                voltage--;
-                voltageInner++;
+                voltage++;
+                voltageInner--;
             }
         }
 

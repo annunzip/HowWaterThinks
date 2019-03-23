@@ -2877,6 +2877,11 @@ Prefab:
       propertyPath: m_Color.b
       value: 0.84313726
       objectReference: {fileID: 0}
+    - target: {fileID: 114095673695782930, guid: bc4696e486dc71040ab55c8971723639,
+        type: 2}
+      propertyPath: m_Text
+      value: '          ='
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc4696e486dc71040ab55c8971723639, type: 2}
   m_IsPrefabAsset: 0
@@ -5731,6 +5736,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cee16026ebd2944ba6ea7775c095dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  membrane0: {fileID: 0}
+  membrane1: {fileID: 0}
+  NaForce: {fileID: 0}
 --- !u!114 &889702324
 MonoBehaviour:
   m_ObjectHideFlags: 0

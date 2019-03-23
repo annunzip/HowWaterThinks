@@ -557,7 +557,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: (       ) =
+  m_Text: '          ='
 --- !u!222 &108012441
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4414,6 +4414,14 @@ Prefab:
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: HandleKSliderChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873251686499968, guid: 1b258fa47235a5c4ea2b19079a532c5d,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Number of K Ions
+
+
+        0           50        100'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b258fa47235a5c4ea2b19079a532c5d, type: 2}
@@ -11269,7 +11277,7 @@ Prefab:
       value: 'Number of Na Ions
 
 
-        0          50         200'
+        0          100       200'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64fff29ffd0db434ab21654e3c3636a2, type: 2}
