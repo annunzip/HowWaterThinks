@@ -18,6 +18,7 @@ public class RunControl : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        Time.timeScale = 1;
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
@@ -132,6 +133,17 @@ public class RunControl : MonoBehaviour
         //Debug.Log ("channelSide = " + channelSide);
 
         return channelSide;
+    }
+
+    public void FastForward()
+    {
+        if (GameObject.FindGameObjectWithTag("FastForward").GetComponent<Dropdown>().value == 0) Time.timeScale = 1;
+        else if (GameObject.FindGameObjectWithTag("FastForward").GetComponent<Dropdown>().value == 1) Time.timeScale = 2;
+        else if (GameObject.FindGameObjectWithTag("FastForward").GetComponent<Dropdown>().value == 2) Time.timeScale = 5;
+        else if (GameObject.FindGameObjectWithTag("FastForward").GetComponent<Dropdown>().value == 3) Time.timeScale = 10;
+        else if (GameObject.FindGameObjectWithTag("FastForward").GetComponent<Dropdown>().value == 4) Time.timeScale = 25;
+
+
     }
 
 

@@ -10,6 +10,7 @@ public class AtomCount : MonoBehaviour {
     public float voltageOuter;
     public float voltageInner;
     public float voltage;
+    public float reflectChance = 0;
     //public float minVoltage;
     //public float maxVoltage;
 
@@ -138,5 +139,7 @@ public class AtomCount : MonoBehaviour {
             else if (voltage > 0) GameObject.FindGameObjectWithTag("Voltage").GetComponentInChildren<Image>().color = new Color(0f / 0f, 0f / 0f, (voltage / maxVoltage * 255f) / 255f);
             else GameObject.FindGameObjectWithTag("Voltage").GetComponentInChildren<Image>().color = new Color(0f / 255f, 0f / 255f, 0f / 255f);
         }
+
+        reflectChance = 100.0f * Mathf.Abs(voltage/maxVoltage);
     }
 }

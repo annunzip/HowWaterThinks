@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class HandleForceTrigger : MonoBehaviour {
 
-    public Texture temp;
-    public Texture temp1;
 
 	// Use this for initialization
 	void Start () {
@@ -14,16 +12,28 @@ public class HandleForceTrigger : MonoBehaviour {
 
     private void OnTriggerEnter(Collider c)
     {
+        bool letThrough = false;
+        float reflectChance = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().reflectChance;
+        if (reflectChance < 5) reflectChance = 5.0f;
+        if (Random.Range(1.0f, 100.0f) < reflectChance) letThrough = true;
+
         if (this.tag == "NaForce")
         {
             if (c.gameObject.tag == "SodiumAtom")
             {
-                //c.gameObject.GetComponent<Renderer>().material.mainTexture = temp;
+                if (!letThrough)
+                {
+                    if (c.gameObject.transform.position.y > 214.95)
+                    {
+                        c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
+                    }
+                    else
+                    {
+                        c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
+                    }
+                }
             } else if (c.gameObject.tag == "ChlorineAtom")
             {
-                Debug.Log("Denied Chlorine");
-                //c.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-                //c.gameObject.GetComponent<Renderer>().material.mainTexture = temp1;
                 if (c.gameObject.transform.position.y > 214.95)
                 {
                     c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
@@ -57,7 +67,17 @@ public class HandleForceTrigger : MonoBehaviour {
             }
             else if (c.gameObject.tag == "ChlorineAtom")
             {
-                //c.gameObject.GetComponent<Renderer>().material.mainTexture = temp;
+                if (!letThrough)
+                {
+                    if (c.gameObject.transform.position.y > 214.95)
+                    {
+                        c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
+                    }
+                    else
+                    {
+                        c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
+                    }
+                }
             }
             else if (c.gameObject.tag == "PotassiumAtom")
             {
@@ -85,8 +105,6 @@ public class HandleForceTrigger : MonoBehaviour {
             }
             else if (c.gameObject.tag == "ChlorineAtom")
             {
-                Debug.Log("Denied Chlorine");
-                //c.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
                 if (c.gameObject.transform.position.y > 214.95)
                 {
                     c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
@@ -97,8 +115,18 @@ public class HandleForceTrigger : MonoBehaviour {
                 }
             }
             else if (c.gameObject.tag == "PotassiumAtom")
-            {   
-                //c.gameObject.GetComponent<Renderer>().material.mainTexture = temp;
+            {
+                if (!letThrough)
+                {
+                    if (c.gameObject.transform.position.y > 214.95)
+                    {
+                        c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
+                    }
+                    else
+                    {
+                        c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
+                    }
+                }
             }
         }
     }

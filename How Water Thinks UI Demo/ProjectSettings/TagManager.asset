@@ -28,6 +28,7 @@ TagManager:
   - NaForce
   - ClForce
   - KForce
+  - FastForward
   layers:
   - Default
   - TransparentFX
