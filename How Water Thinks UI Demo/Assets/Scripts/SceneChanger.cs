@@ -22,7 +22,7 @@ public class SceneChanger : MonoBehaviour {
     public void PrevScene()
     {
         int prevSceneIndex = SceneManager.GetActiveScene().buildIndex - 1;
-        if (prevSceneIndex >= 0)
+        if (prevSceneIndex >= 2)
         {
             SceneManager.LoadScene(prevSceneIndex);
         }
