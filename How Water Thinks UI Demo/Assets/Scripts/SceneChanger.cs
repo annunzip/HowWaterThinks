@@ -28,6 +28,13 @@ public class SceneChanger : MonoBehaviour {
         }
     }
 
+    public void StartGame(){
+        SceneManager.LoadScene("Scene 1");
+    }
+    public void Settings(){
+        SceneManager.LoadScene("Settings Menu");
+    }
+
     //Update is called once per frame
     void Update () {
 		
