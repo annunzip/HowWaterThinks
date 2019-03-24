@@ -34,6 +34,9 @@ public class SceneChanger : MonoBehaviour {
     public void Settings(){
         SceneManager.LoadScene("Settings Menu");
     }
+    public void MainMenu(){
+        SceneManager.LoadScene("Main Menu");     
+    }
 
     //Update is called once per frame
     void Update () {
