@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1440897163994094}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 661.46735, y: 215.72668, z: -205.4294}
+  m_LocalPosition: {x: 661.4119, y: 215.85602, z: -204.51714}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -111,8 +111,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25e59adb1237ca74285d0ec6372be25d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   inVelA: {x: 0, y: 0, z: 0}
   outVelA: {x: 0, y: 0, z: 0}
   inVelB: {x: 0, y: 0, z: 0}
@@ -126,8 +126,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff639eeaa696c6342982917584f62182, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   velocityMultiplier: 0.05
   angularVelocityMultiplier: 0.05
   temperatureMultiplier: 0.5
