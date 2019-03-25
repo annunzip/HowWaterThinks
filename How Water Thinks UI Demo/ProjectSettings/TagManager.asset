@@ -30,6 +30,9 @@ TagManager:
   - KForce
   - FastForward
   - VoltageChanger
+  - NaLiner
+  - ClLiner
+  - KLiner
   layers:
   - Default
   - TransparentFX

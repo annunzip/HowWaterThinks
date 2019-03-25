@@ -8,9 +8,10 @@ public class toggleReaction : MonoBehaviour {
     public GameObject membrane0;
     public GameObject membrane1;
     public GameObject NaForce;
+    public GameObject NaLiner;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 
@@ -56,12 +57,15 @@ public class toggleReaction : MonoBehaviour {
             membrane0.SetActive(false);
             membrane1.SetActive(true);
             NaForce.SetActive(true);
+            NaLiner.SetActive(true);
         }
         else
         {
             membrane1.SetActive(false);
             NaForce.SetActive(false);
+            NaLiner.SetActive(false);
             membrane0.SetActive(true);
+
         }
     }
 
