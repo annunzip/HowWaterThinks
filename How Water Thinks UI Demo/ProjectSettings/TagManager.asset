@@ -29,6 +29,7 @@ TagManager:
   - ClForce
   - KForce
   - FastForward
+  - VoltageChanger
   layers:
   - Default
   - TransparentFX
