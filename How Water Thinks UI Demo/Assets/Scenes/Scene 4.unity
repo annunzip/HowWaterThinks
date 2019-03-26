@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4262,14 +4262,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 889702325}
-        m_MethodName: PrevScene
-        m_Mode: 1
+        m_MethodName: changeScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Scene 3
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -4939,6 +4939,7 @@ MonoBehaviour:
   membrane0: {fileID: 0}
   membrane1: {fileID: 0}
   NaForce: {fileID: 0}
+  NaLiner: {fileID: 0}
 --- !u!114 &889702324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6124,7 +6125,7 @@ Prefab:
     - target: {fileID: 224548202184958624, guid: 8f7c13eddfb4f48419b5a3a6ac88c463,
         type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224548202184958624, guid: 8f7c13eddfb4f48419b5a3a6ac88c463,
         type: 2}
@@ -8429,7 +8430,7 @@ Prefab:
     - target: {fileID: 224115294315134498, guid: 600d05cae5826044fad64b48e72a6294,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224115294315134498, guid: 600d05cae5826044fad64b48e72a6294,
         type: 2}
