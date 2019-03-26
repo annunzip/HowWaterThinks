@@ -37,7 +37,12 @@ public class SceneChanger : MonoBehaviour {
     public void MainMenu(){
         SceneManager.LoadScene("Main Menu");     
     }
-
+    public void Tutorial(){
+        SceneManager.LoadScene("Tutorial");     
+    }
+    public void changeScene(string theScene){
+        SceneManager.LoadScene(theScene);     
+    }
     //Update is called once per frame
     void Update () {
 		
