@@ -152,7 +152,6 @@ public class RunControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltage());
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             foreach (GameObject atom in GameObject.FindGameObjectsWithTag("PotassiumAtom"))
