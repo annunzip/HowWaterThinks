@@ -97,6 +97,63 @@ public class sliderReaction : MonoBehaviour {
         }
     }
 
+    public void HandleInverseVoltmeterChange(Slider iVSlider)
+    {
+        int NaOuter = 0;
+        int NaInner = 0;
+        ArrayList NaIonsOuter = new ArrayList();
+        ArrayList NaIonsInner = new ArrayList();
+
+        foreach (GameObject ion in GameObject.FindGameObjectsWithTag("SodiumAtom"))
+        {
+            if (ion.transform.position.y > 214.95)
+            {
+                NaOuter++;
+                NaIonsOuter.Add(ion);
+            }
+            else
+            {
+                NaInner++;
+                NaIonsInner.Add(ion);
+            }
+        }
+
+        float currentVoltage = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltage();
+        float desiredVoltage = iVSlider.GetComponent<Slider>().value;
+
+        int numAtoms = (int)Mathf.Abs(currentVoltage - desiredVoltage);
+
+        if (currentVoltage < desiredVoltage)
+        {
+            if (NaIonsInner.Count < NaIonsOuter.Count)
+            {
+                GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, numAtoms, 0, 0, false);
+            }
+            else
+            {
+                for (int i = 0; i < numAtoms; i++)
+                {
+                    Destroy(NaIonsOuter[i] as GameObject);
+                    NaIonsOuter.RemoveAt(i);
+                }
+            }
+        } else if (currentVoltage > desiredVoltage)
+        {
+            if (NaIonsInner.Count < NaIonsOuter.Count)
+            {
+                GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, numAtoms, 0, 0, true);
+            }
+            else
+            {
+                for (int i = 0; i < numAtoms; i++)
+                {
+                    Destroy(NaIonsInner[i] as GameObject);
+                    NaIonsInner.RemoveAt(i);
+                }
+            }
+        }
+    }
+
     // Update is called once per frame
     void Update () {
         /*

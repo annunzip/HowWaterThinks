@@ -6656,7 +6656,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 889702322}
     - target: {fileID: 224948499814357416, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
       propertyPath: m_LocalScale.x
@@ -6682,11 +6682,11 @@ Prefab:
       value: ' Voltage Changer
 
 
-        0%        50%       100%'
+'
       objectReference: {fileID: 0}
     - target: {fileID: 1037271769163556, guid: 64fff29ffd0db434ab21654e3c3636a2, type: 2}
       propertyPath: m_Name
-      value: Slider
+      value: Inverse Voltage Slider
       objectReference: {fileID: 0}
     - target: {fileID: 1037271769163556, guid: 64fff29ffd0db434ab21654e3c3636a2, type: 2}
       propertyPath: m_TagString
@@ -6695,22 +6695,22 @@ Prefab:
     - target: {fileID: 114311224307148238, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HandleVoltageChange
+      value: HandleInverseVoltmeterChange
       objectReference: {fileID: 0}
     - target: {fileID: 114311224307148238, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114311224307148238, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2095725581}
     - target: {fileID: 114311224307148238, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: UnityEngine.UI.Slider, UnityEngine.UI
       objectReference: {fileID: 0}
     - target: {fileID: 114311224307148238, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
@@ -12327,6 +12327,12 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2076213043}
   m_CullTransparentMesh: 0
+--- !u!114 &2095725581 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114311224307148238, guid: 64fff29ffd0db434ab21654e3c3636a2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1081637845}
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &2101893523
 GameObject:
   m_ObjectHideFlags: 0
