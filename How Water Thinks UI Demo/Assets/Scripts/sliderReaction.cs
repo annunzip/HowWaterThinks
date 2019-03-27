@@ -128,8 +128,15 @@ public class sliderReaction : MonoBehaviour {
         {
             if (NaIonsInner.Count < NaIonsOuter.Count)
             {
-                Debug.Log("added to inner");
-                GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, numAtoms, 0, 0, false);
+                for (int i = 0; i < numAtoms; i++)
+                {
+                    Debug.Log("added to inner");
+                    if (i < NaIonsOuter.Count)
+                    {
+                        Destroy(NaIonsOuter[i] as GameObject);
+                        NaIonsOuter.RemoveAt(i);
+                    } else GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 1, 0, 0, false); ;
+                }
             }
             else
             {
@@ -148,8 +155,15 @@ public class sliderReaction : MonoBehaviour {
         {
             if (NaIonsInner.Count > NaIonsOuter.Count)
             {
-                Debug.Log("added to outer");
-                GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, numAtoms, 0, 0, true);
+                for (int i = 0; i < numAtoms; i++)
+                {
+                    Debug.Log("added to outer");
+                    if (i < NaIonsInner.Count)
+                    {
+                        Destroy(NaIonsInner[i] as GameObject);
+                        NaIonsInner.RemoveAt(i);
+                    } else GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 1, 0, 0, true);
+                }
             }
             else
             {
