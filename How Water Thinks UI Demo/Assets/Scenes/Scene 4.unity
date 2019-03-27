@@ -12213,7 +12213,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: 63d419dfdb104c747aac1ceda745038f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: 63d419dfdb104c747aac1ceda745038f, type: 3}
       propertyPath: m_Name
