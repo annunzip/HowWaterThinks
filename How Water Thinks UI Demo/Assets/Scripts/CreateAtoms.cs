@@ -162,6 +162,74 @@ public class CreateAtoms : MonoBehaviour {
         }
     }
 
+    public void AddNAtoms(float L, float l, int numNaAtoms, int numClAtoms, int numKAtoms, bool isOuter)
+    {
+
+        if (isOuter)
+        {
+            atomTransform.position = CreateAtomPosition(L, l);
+        } else
+        {
+            atomTransform.position = kAtomPosition;
+        }
+
+        for (int i = 0; i < numNaAtoms; i++)
+        {
+
+            //Debug.Log ("Entering CreateNAtoms");
+            // Create an ion in a box
+            //atomTransform.position = CreateAtomPosition(L, l);
+            Vector3 atomPosition = atomTransform.position;
+
+
+
+            // Create a clone of atom at atomPosition
+            GameObject atomclone = Instantiate(sodiumAtom, atomPosition, Quaternion.identity);
+
+
+
+            // Set initial velocity
+            atomclone.GetComponent<Rigidbody>().velocity = Vector3.up;
+        }
+
+        for (int i = 0; i < numClAtoms; i++)
+        {
+
+            //Debug.Log ("Entering CreateNAtoms");
+            // Create an ion in a box
+            //atomTransform.position = CreateAtomPosition(L, l);
+            Vector3 atomPosition = atomTransform.position;
+
+
+
+            GameObject atomclone;
+            // Create a clone of atom at atomPosition
+            atomclone = Instantiate(chlorineAtom, kAtomPosition, Quaternion.identity);
+
+            // Set initial velocity
+            atomclone.GetComponent<Rigidbody>().velocity = Vector3.up;
+        }
+
+        for (int i = 0; i < numKAtoms; i++)
+        {
+
+            //Debug.Log ("Entering CreateNAtoms");
+            // Create an ion in a box
+            //atomTransform.position = CreateAtomPosition(L, l);
+            Vector3 atomPosition = atomTransform.position;
+
+
+
+            // Create a clone of atom at atomPosition
+            GameObject atomclone = Instantiate(potassiumAtom, atomPosition, Quaternion.identity);
+
+
+
+            // Set initial velocity
+            atomclone.GetComponent<Rigidbody>().velocity = Vector3.up;
+        }
+    }
+
     Vector3 CreateAtomPosition(float L, float l)
     {
 
@@ -200,7 +268,7 @@ public class CreateAtoms : MonoBehaviour {
 
         // Create a position vector
         Vector3 atomPosition = new Vector3(661 + xatom, 215 + yatom, -205 + zatom);
-        kAtomPosition = new Vector3(661+ xatom, 213.71f + yatom, -205 + zatom);
+        kAtomPosition = new Vector3(661 + xatom, 213.71f + yatom, -205 + zatom);
 
         //Debug.Log(atomPosition);
         return atomPosition;

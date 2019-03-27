@@ -42,6 +42,8 @@ public class RunControl : MonoBehaviour
             GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value = atoms.GetComponent<CreateAtoms>().numberOfSodiumAtoms;
             GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value = atoms.GetComponent<CreateAtoms>().numberOfChlorineAtoms;
             GameObject.FindGameObjectWithTag("NumKIons").GetComponent<Slider>().value = atoms.GetComponent<CreateAtoms>().numberOfPotassiumAtoms;
+            GameObject.FindGameObjectWithTag("VoltageChanger").GetComponent<Slider>().maxValue = 300;
+            GameObject.FindGameObjectWithTag("VoltageChanger").GetComponent<Slider>().minValue = -300;
         }
         else if (sceneName == "Scene 1")
         {
@@ -150,6 +152,7 @@ public class RunControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltage());
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             foreach (GameObject atom in GameObject.FindGameObjectsWithTag("PotassiumAtom"))
