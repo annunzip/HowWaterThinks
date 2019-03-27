@@ -33,6 +33,10 @@ TagManager:
   - NaLiner
   - ClLiner
   - KLiner
+  - NaChannelToggle
+  - ClChannelToggle
+  - KChannelToggle
+  - ModelMembrane
   layers:
   - Default
   - TransparentFX

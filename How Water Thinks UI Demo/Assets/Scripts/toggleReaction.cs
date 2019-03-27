@@ -5,10 +5,20 @@ using UnityEngine.UI;
 
 public class toggleReaction : MonoBehaviour {
 
-    public GameObject membrane0;
-    public GameObject membrane1;
+    public GameObject ZeroMembrane;
+    public GameObject NaMembrane;
+    public GameObject ClMembrane;
+    public GameObject KMembrane;
+    public GameObject NaClMembrane;
+    public GameObject NaKMembrane;
+    public GameObject ClKMembrane;
+    public GameObject NaClKMembrane;
     public GameObject NaForce;
     public GameObject NaLiner;
+    public GameObject ClForce;
+    public GameObject ClLiner;
+    public GameObject KForce;
+    public GameObject KLiner;
 
     // Use this for initialization
     void Start () {
@@ -50,22 +60,58 @@ public class toggleReaction : MonoBehaviour {
         }
     }
 
-    public void HandleMembraneToggle(Toggle membraneToggle)
+    public void HandleMembraneToggle()
     {
-        if (membraneToggle.isOn == true)
+        bool NaOn = false;
+        bool ClOn = false;
+        bool KOn = false;
+        if (GameObject.FindGameObjectsWithTag("NaChannelToggle").Length > 0) NaOn = GameObject.FindGameObjectWithTag("NaChannelToggle").GetComponent<Toggle>().isOn;
+        if (GameObject.FindGameObjectsWithTag("ClChannelToggle").Length > 0) ClOn = GameObject.FindGameObjectWithTag("ClChannelToggle").GetComponent<Toggle>().isOn;
+        if (GameObject.FindGameObjectsWithTag("KChannelToggle").Length > 0) KOn = GameObject.FindGameObjectWithTag("KChannelToggle").GetComponent<Toggle>().isOn;
+
+        for (int i = 0; i < GameObject.FindGameObjectWithTag("ModelMembrane").transform.childCount; i++)
         {
-            membrane0.SetActive(false);
-            membrane1.SetActive(true);
-            NaForce.SetActive(true);
+            var child = GameObject.FindGameObjectWithTag("ModelMembrane").transform.GetChild(i).gameObject;
+            if (child != null)
+                child.SetActive(false);
+        }
+
+        if (!NaOn && !ClOn && !KOn)
+        {
+            ZeroMembrane.SetActive(true);
+        } else if (NaOn && !ClOn && !KOn) //1
+        {
+            NaMembrane.SetActive(true);
             NaLiner.SetActive(true);
         }
-        else
+        else if (!NaOn && ClOn && !KOn) //2
         {
-            membrane1.SetActive(false);
-            NaForce.SetActive(false);
-            NaLiner.SetActive(false);
-            membrane0.SetActive(true);
-
+            ClMembrane.SetActive(true);
+            ClLiner.SetActive(true);
+        }
+        else if (!NaOn && !ClOn && KOn) //3
+        {
+            KMembrane.SetActive(true);
+            KLiner.SetActive(true);
+        }
+        else if(NaOn && ClOn && !KOn) //1 2
+        {
+            NaClMembrane.SetActive(true);
+            NaLiner.SetActive(true);
+            ClLiner.SetActive(true);
+        }
+        else if (!NaOn && ClOn && KOn) //2 3
+        {
+            ClKMembrane.SetActive(true);
+            ClLiner.SetActive(true);
+            KLiner.SetActive(true);
+        }
+        else if(NaOn && ClOn && KOn) //1 2 3
+        {
+            NaClKMembrane.SetActive(true);
+            NaLiner.SetActive(true);
+            ClLiner.SetActive(true);
+            KLiner.SetActive(true);
         }
     }
 
