@@ -976,6 +976,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: a5616a2ade1897f41850635466aa9a10, type: 3}
+      propertyPath: m_Name
+      value: NaMembrane
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5616a2ade1897f41850635466aa9a10, type: 3}
   m_IsPrefabAsset: 0
@@ -4517,10 +4521,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cee16026ebd2944ba6ea7775c095dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  membrane0: {fileID: 1300433385}
-  membrane1: {fileID: 159884567}
+  ZeroMembrane: {fileID: 1300433385}
+  NaMembrane: {fileID: 159884567}
+  ClMembrane: {fileID: 0}
+  KMembrane: {fileID: 0}
+  NaClMembrane: {fileID: 0}
+  NaKMembrane: {fileID: 0}
+  ClKMembrane: {fileID: 0}
+  NaClKMembrane: {fileID: 0}
   NaForce: {fileID: 19313922}
   NaLiner: {fileID: 1519174894}
+  ClForce: {fileID: 0}
+  ClLiner: {fileID: 0}
+  KForce: {fileID: 0}
+  KLiner: {fileID: 0}
 --- !u!114 &889702324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5399,7 +5413,7 @@ GameObject:
   - component: {fileID: 1131891550}
   m_Layer: 0
   m_Name: Toggle
-  m_TagString: Untagged
+  m_TagString: NaChannelToggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5468,10 +5482,10 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 889702323}
         m_MethodName: HandleMembraneToggle
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1131891550}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6109,6 +6123,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 63d419dfdb104c747aac1ceda745038f, type: 3}
+      propertyPath: m_Name
+      value: ZeroMembrane
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63d419dfdb104c747aac1ceda745038f, type: 3}
   m_IsPrefabAsset: 0
@@ -6517,7 +6535,7 @@ GameObject:
   - component: {fileID: 1383374848}
   m_Layer: 0
   m_Name: Model Membrane
-  m_TagString: Untagged
+  m_TagString: ModelMembrane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
