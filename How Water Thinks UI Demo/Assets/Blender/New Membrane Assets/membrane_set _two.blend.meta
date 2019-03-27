@@ -1,39 +1,39 @@
 fileFormatVersion: 2
-guid: 2d8d99e3bed2b0545b508267f9a7a1bc
+guid: 61b4ca1e3be4f1b48a45c4654ea8609d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: BASE_WIGGLY
-    100002: Hole_3_Bottom
-    100004: Hole_3_Top
+    100002: Hole_2_Bottom
+    100004: Hole_2_Top
     100006: //RootNode
     100008: Top_Layer
     100010: WIggly_1400
     100012: WIggly_779
     400000: BASE_WIGGLY
-    400002: Hole_3_Bottom
-    400004: Hole_3_Top
+    400002: Hole_2_Bottom
+    400004: Hole_2_Top
     400006: //RootNode
     400008: Top_Layer
     400010: WIggly_1400
     400012: WIggly_779
     2100000: unnamed
     2300000: BASE_WIGGLY
-    2300002: Hole_3_Bottom
-    2300004: Hole_3_Top
+    2300002: Hole_2_Bottom
+    2300004: Hole_2_Top
     2300006: Top_Layer
     2300008: WIggly_1400
     2300010: WIggly_779
     3300000: BASE_WIGGLY
-    3300002: Hole_3_Bottom
-    3300004: Hole_3_Top
+    3300002: Hole_2_Bottom
+    3300004: Hole_2_Top
     3300006: Top_Layer
     3300008: WIggly_1400
     3300010: WIggly_779
     4300000: BASE_WIGGLY
-    4300002: Hole_3_Top
+    4300002: Hole_2_Top
     4300004: WIggly_779
-    4300006: Hole_3_Bottom
+    4300006: Hole_2_Bottom
     4300008: WIggly_1400
     4300010: Top_Layer
     7400000: Default Take

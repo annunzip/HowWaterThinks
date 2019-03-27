@@ -966,7 +966,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: a5616a2ade1897f41850635466aa9a10, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: a5616a2ade1897f41850635466aa9a10, type: 3}
       propertyPath: m_LocalScale.y
@@ -5493,7 +5493,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &1138638469
 GameObject:
   m_ObjectHideFlags: 0
@@ -6121,7 +6121,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: 63d419dfdb104c747aac1ceda745038f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: 63d419dfdb104c747aac1ceda745038f, type: 3}
       propertyPath: m_Name
@@ -6150,7 +6150,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 1.0000001, z: 4}
+  m_Size: {x: 2, y: 0.15, z: 4}
   m_Center: {x: -1, y: 0, z: -2}
 --- !u!1 &1309986176
 GameObject:
@@ -7720,8 +7720,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1086542415}
   m_HandleRect: {fileID: 1086542414}
   m_Direction: 2
-  m_Value: 0.980121
-  m_Size: 0.45191854
+  m_Value: 0.9801211
+  m_Size: 0.4519186
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

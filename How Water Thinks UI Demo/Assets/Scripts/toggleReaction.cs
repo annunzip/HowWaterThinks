@@ -106,7 +106,13 @@ public class toggleReaction : MonoBehaviour {
             ClLiner.SetActive(true);
             KLiner.SetActive(true);
         }
-        else if(NaOn && ClOn && KOn) //1 2 3
+        else if (NaOn && !ClOn && KOn) //1 3
+        {
+            NaKMembrane.SetActive(true);
+            NaLiner.SetActive(true);
+            KLiner.SetActive(true);
+        }
+        else if (NaOn && ClOn && KOn) //1 2 3
         {
             NaClKMembrane.SetActive(true);
             NaLiner.SetActive(true);
