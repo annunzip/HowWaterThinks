@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114705481880956992}
   - component: {fileID: 114467526787645584}
   m_Layer: 0
-  m_Name: sodiumAtom
+  m_Name: sodiumAtom_LOCAL_13784
   m_TagString: SodiumAtom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
