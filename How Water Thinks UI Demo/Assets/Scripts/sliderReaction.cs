@@ -122,33 +122,46 @@ public class sliderReaction : MonoBehaviour {
         float desiredVoltage = iVSlider.GetComponent<Slider>().value;
 
         int numAtoms = (int)Mathf.Abs(currentVoltage - desiredVoltage);
+        Debug.Log(numAtoms);
 
         if (currentVoltage < desiredVoltage)
         {
             if (NaIonsInner.Count < NaIonsOuter.Count)
             {
+                Debug.Log("added to inner");
                 GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, numAtoms, 0, 0, false);
             }
             else
             {
                 for (int i = 0; i < numAtoms; i++)
                 {
-                    Destroy(NaIonsOuter[i] as GameObject);
-                    NaIonsOuter.RemoveAt(i);
+                    Debug.Log("removed from outer");
+                    if (i < NaIonsOuter.Count)
+                    {
+                        Destroy(NaIonsOuter[i] as GameObject);
+                        NaIonsOuter.RemoveAt(i);
+                    }
+                    else GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 1, 0, 0, false);
                 }
             }
         } else if (currentVoltage > desiredVoltage)
         {
-            if (NaIonsInner.Count < NaIonsOuter.Count)
+            if (NaIonsInner.Count > NaIonsOuter.Count)
             {
+                Debug.Log("added to outer");
                 GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, numAtoms, 0, 0, true);
             }
             else
             {
                 for (int i = 0; i < numAtoms; i++)
                 {
-                    Destroy(NaIonsInner[i] as GameObject);
-                    NaIonsInner.RemoveAt(i);
+                    Debug.Log("removed from inner");
+                    if (i < NaIonsInner.Count)
+                    {
+                        Destroy(NaIonsInner[i] as GameObject);
+                        NaIonsInner.RemoveAt(i);
+                    }
+                    else GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 1, 0, 0, true);
                 }
             }
         }
