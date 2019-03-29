@@ -2961,9 +2961,9 @@ RectTransform:
   - {fileID: 1324432652}
   - {fileID: 2007434406}
   - {fileID: 577015762}
+  - {fileID: 1720860632}
   - {fileID: 1933049291}
   - {fileID: 1439300678}
-  - {fileID: 1720860632}
   - {fileID: 688218841}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -5259,7 +5259,7 @@ Prefab:
     - target: {fileID: 114018876896816170, guid: 1c8a6b4a6b5b8de44ae049d205291b57,
         type: 2}
       propertyPath: numberOfPotassiumAtoms
-      value: 150
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c8a6b4a6b5b8de44ae049d205291b57, type: 2}
@@ -6645,8 +6645,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1593992728}
   m_HandleRect: {fileID: 1593992727}
   m_Direction: 2
-  m_Value: 0.9801211
-  m_Size: 0.4519186
+  m_Value: 0.9454692
+  m_Size: 0.40928477
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9096,8 +9096,8 @@ RectTransform:
   m_Father: {fileID: 613741800}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5371861}
-  m_AnchorMax: {x: 1, y: 0.9891047}
+  m_AnchorMin: {x: 0, y: 0.55850303}
+  m_AnchorMax: {x: 1, y: 0.9677878}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9513,7 +9513,7 @@ RectTransform:
   m_Children:
   - {fileID: 636718104}
   m_Father: {fileID: 461591069}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -10537,8 +10537,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.0001, y: -6.9}
-  m_SizeDelta: {x: 1274, y: 286.2}
+  m_AnchoredPosition: {x: 3.0001, y: 6.6}
+  m_SizeDelta: {x: 1274, y: 259.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1847228116
 MonoBehaviour:
@@ -11307,19 +11307,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Now imagine we have two types of ions, dark-blue sodium (Na+) outside the
-    cell and light-blue potassium (K+) inside the cell. Again, let\u2019s imagine
-    the charges are turned off so that the ions will not blow through the box walls
-    and scatter to the four corners. \r\n\r\nThis time we have two possible holes
-    in the membrane, one that only allows Na+ through in both directions and one that
-    only allows K+ through in both directions. Now suppose we close the potassium
-    channel and open the sodium channel. Try it with the toggles on the left. The
-    K+ is trapped inside the cell, while the Na+ can work its way back and forth across
-    the membrane. After a sufficient time, the Na+ will be equally spread across both
-    sides of the membrane while the K+ will only be on the inside.\v\r\nNow suppose
-    we open both channels (try it). The ions will spread such that the concentrations
-    of both Na+ and K+ are equal on both sides of the membrane. We see nothing surprising
-    so far.\r\n"
+  m_Text: 
 --- !u!222 &1916015925
 CanvasRenderer:
   m_ObjectHideFlags: 0
