@@ -710,7 +710,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 249.99997, y: 217.27}
+  m_AnchoredPosition: {x: 158, y: 259}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &145563942
@@ -1544,7 +1544,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 300, y: 230}
+  m_AnchoredPosition: {x: 208, y: 271.72998}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &306453700
@@ -3443,7 +3443,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchoredPosition: {x: 0, y: -115}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &645167705
@@ -3706,12 +3706,12 @@ Prefab:
     - target: {fileID: 224360059043928932, guid: 1b258fa47235a5c4ea2b19079a532c5d,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -149.99995
+      value: -62.999954
       objectReference: {fileID: 0}
     - target: {fileID: 224360059043928932, guid: 1b258fa47235a5c4ea2b19079a532c5d,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 149.7
+      value: 187
       objectReference: {fileID: 0}
     - target: {fileID: 224360059043928932, guid: 1b258fa47235a5c4ea2b19079a532c5d,
         type: 2}
@@ -8018,7 +8018,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchoredPosition: {x: 0, y: 15}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1601772660
@@ -9444,8 +9444,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 347007809}
   m_HandleRect: {fileID: 347007808}
   m_Direction: 2
-  m_Value: 0.980121
-  m_Size: 0.4519186
+  m_Value: 0.98012096
+  m_Size: 0.45191854
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10780,6 +10780,16 @@ Prefab:
         type: 2}
       propertyPath: m_Color.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224948499814357416, guid: 64fff29ffd0db434ab21654e3c3636a2,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -63
+      objectReference: {fileID: 0}
+    - target: {fileID: 224948499814357416, guid: 64fff29ffd0db434ab21654e3c3636a2,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 303
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64fff29ffd0db434ab21654e3c3636a2, type: 2}
