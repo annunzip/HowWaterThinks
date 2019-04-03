@@ -13,7 +13,9 @@ public class Tutorial_Change : MonoBehaviour {
 	void Start () {
 		Button btn = butt.GetComponent<Button>();
 		btn.onClick.AddListener(TaskOnClick);
-	}
+        CanvasA.gameObject.SetActive(true);
+        CanvasB.gameObject.SetActive(false);
+    }
 	
 	// Update is called once per frame
 	void TaskOnClick() {
