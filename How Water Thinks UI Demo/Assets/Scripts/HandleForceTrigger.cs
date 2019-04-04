@@ -116,8 +116,8 @@ public class HandleForceTrigger : MonoBehaviour {
             }
             else if (c.gameObject.tag == "PotassiumAtom")
             {
-                if (!letThrough)
-                {
+                //if (!letThrough)
+                //{
                     if (c.gameObject.transform.position.y > 214.95)
                     {
                         c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
@@ -126,7 +126,7 @@ public class HandleForceTrigger : MonoBehaviour {
                     {
                         c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
                     }
-                }
+                //}
             }
         }
     }
