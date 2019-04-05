@@ -17,7 +17,10 @@ public class sliderReaction : MonoBehaviour {
     public void HandleNaSliderChange(Slider naSlider)
     {
         if (GameObject.FindGameObjectsWithTag("NumClIons") != null && GameObject.FindGameObjectsWithTag("NumNaIons") != null)
-            if (GameObject.FindGameObjectsWithTag("NumClIons").Length > 0 && GameObject.FindGameObjectsWithTag("NumNaIons").Length > 0) GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value = GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value;
+            if (GameObject.FindGameObjectsWithTag("NumClIons").Length > 0 && GameObject.FindGameObjectsWithTag("NumNaIons").Length > 0 && 
+            GameObject.FindGameObjectsWithTag("NumKIons").Length > 0) 
+            GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value = GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value + 
+            GameObject.FindGameObjectWithTag("NumKIons").GetComponent<Slider>().value;
 
         if (GameObject.FindGameObjectWithTag("naToggle").GetComponent<Toggle>().isOn)
         {
