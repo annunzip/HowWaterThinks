@@ -14,7 +14,7 @@ public class HandleForceTrigger : MonoBehaviour {
     {
         bool letThrough = false;
         float reflectChance = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().reflectChance;
-        //if (reflectChance < 3) reflectChance = 3.0f;
+        if (reflectChance < 2) reflectChance = 2.0f;
         if (Random.Range(1.0f, 100.0f) <= reflectChance) letThrough = true;
 
         //float voltageOuter = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltageOuter();

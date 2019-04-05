@@ -723,7 +723,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Chlorine Ion
 
-    (+1 charge)'
+    (-1 charge)'
 --- !u!222 &131932182
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -763,7 +763,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -772, y: -157}
+  m_AnchoredPosition: {x: -771, y: -102.000015}
   m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &198896989
@@ -1111,7 +1111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -677, y: 50}
+  m_AnchoredPosition: {x: -646, y: 50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &536584941
@@ -1516,7 +1516,7 @@ MonoBehaviour:
 
     an area of our cell. The top half
 
-    represents the outside of the cell,
+    represents the outside of the cell
 
     and the bottom half represents the inside.'
 --- !u!222 &702656190
@@ -1856,7 +1856,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Sodium Ion
 
-    (-1 Charge)'
+    (+1 Charge)'
 --- !u!222 &775066455
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2221,7 +2221,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'This is an introduction to the 3D model.
 
-    Click "Next" to progreess to the game UI and capabilities.'
+    Click "Next" to progress to the game.'
 --- !u!222 &1087443818
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3026,7 +3026,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Each of these holes is a PORE.
+  m_Text: 'Each of these holes is a different ION-SPECIFIC CHANNEL.
 
     Every color represents a different ion,
 
@@ -3105,13 +3105,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'This text box details
-
-    what''s happening in
-
-    your cell membrane and
-
-    discusses new ions.'
+  m_Text: The module's lesson can be found here. Read this to learn what the module
+    is about and why things are happening.
 --- !u!222 &1322470815
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4060,7 +4055,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Potassium Ion
 
-    (-1 Charge)'
+    (+1 Charge)'
 --- !u!222 &1649467234
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4100,7 +4095,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -677, y: -281}
+  m_AnchoredPosition: {x: -646, y: -282}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1658798781
@@ -5158,7 +5153,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: This box details the ions and options available for a current scene. All
-    relevant equations will be listed here as well.
+    relevant  equations will be listed here as well.
 --- !u!222 &1995372012
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5277,7 +5272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -677, y: -153}
+  m_AnchoredPosition: {x: -593, y: -132}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2039845424
