@@ -621,6 +621,35 @@ Prefab:
       value: 
       objectReference: {fileID: 12800000, guid: d7f1e6aa786645a428856a85b74cd456,
         type: 3}
+    - target: {fileID: 114311224307148238, guid: 64fff29ffd0db434ab21654e3c3636a2,
+        type: 2}
+      propertyPath: m_MinValue
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 224391775512129606, guid: 64fff29ffd0db434ab21654e3c3636a2,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.50625
+      objectReference: {fileID: 0}
+    - target: {fileID: 224391775512129606, guid: 64fff29ffd0db434ab21654e3c3636a2,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.50625
+      objectReference: {fileID: 0}
+    - target: {fileID: 224847549460765028, guid: 64fff29ffd0db434ab21654e3c3636a2,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.50625
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311224307148238, guid: 64fff29ffd0db434ab21654e3c3636a2,
+        type: 2}
+      propertyPath: m_MaxValue
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064718147338936, guid: 64fff29ffd0db434ab21654e3c3636a2, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64fff29ffd0db434ab21654e3c3636a2, type: 2}
   m_IsPrefabAsset: 0

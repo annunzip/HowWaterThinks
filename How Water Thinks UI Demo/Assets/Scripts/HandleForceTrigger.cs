@@ -15,7 +15,7 @@ public class HandleForceTrigger : MonoBehaviour {
         bool letThrough = false;
         float reflectChance = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().reflectChance;
         if (reflectChance < 5) reflectChance = 5.0f;
-        if (Random.Range(1.0f, 100.0f) < reflectChance) letThrough = true;
+        if (Random.Range(1.0f, 100.0f) <= reflectChance) letThrough = true;
 
         if (this.tag == "NaForce")
         {

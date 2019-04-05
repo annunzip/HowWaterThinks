@@ -140,6 +140,8 @@ public class AtomCount : MonoBehaviour {
             else GameObject.FindGameObjectWithTag("Voltage").GetComponentInChildren<Image>().color = new Color(0f / 255f, 0f / 255f, 0f / 255f);
         }
 
-        reflectChance = 100.0f * Mathf.Abs(voltage/maxVoltage);
+        float targetVoltage = 0;
+        if (GameObject.FindGameObjectsWithTag("VoltageChanger").Length > 0) targetVoltage = GameObject.FindGameObjectWithTag("VoltageChanger").GetComponent<Slider>().value;
+        reflectChance = 100.0f * Mathf.Abs((voltage/maxVoltage) - (targetVoltage/maxVoltage));
     }
 }
