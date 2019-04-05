@@ -101,7 +101,7 @@ public class sliderReaction : MonoBehaviour {
         }
     }
 
-    public void HandleInverseVoltmeterChange(Slider iVSlider)
+    /*public void HandleInverseVoltmeterChange(Slider iVSlider)
     {
         int NaOuter = 0;
         int NaInner = 0;
@@ -183,7 +183,7 @@ public class sliderReaction : MonoBehaviour {
                 }
             }
         }
-    }
+    }*/
 
     // Update is called once per frame
     void Update () {

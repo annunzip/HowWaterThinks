@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class AtomCount : MonoBehaviour {
 
+    float targetVoltage;
+    int i = 0;
     public int numAtomsOuter;
     public int numAtomsInner;
     public float voltageOuter;
@@ -16,9 +18,13 @@ public class AtomCount : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
+        targetVoltage = 0;
 	}
 
+    public float getTargetVoltage()
+    {
+        return targetVoltage;
+    }
     public float getVoltageOuter()
     {
         return voltageOuter;
@@ -51,13 +57,13 @@ public class AtomCount : MonoBehaviour {
             {
                 numAtomsOuter++;
                 voltage--;
-                voltageOuter--;
+                voltageOuter++;
             }
             else
             {
                 numAtomsInner++;
                 voltage++;
-                voltageInner--;
+                voltageInner++;
             }
         }
         foreach (GameObject atom in GameObject.FindGameObjectsWithTag("ChlorineAtom"))
@@ -66,14 +72,14 @@ public class AtomCount : MonoBehaviour {
             {
                 numAtomsOuter++;
                 voltage++;
-                voltageOuter++;
+                voltageOuter--;
 
             }
             else
             {
                 numAtomsInner++;
                 voltage--;
-                voltageInner++;
+                voltageInner--;
             }
 
         }
@@ -83,13 +89,13 @@ public class AtomCount : MonoBehaviour {
             {
                 numAtomsOuter += 1;
                 voltage--;
-                voltageOuter--;
+                voltageOuter++;
             }
             else
             {
                 numAtomsInner += 1;
                 voltage++;
-                voltageInner--;
+                voltageInner++;
             }
         }
 
@@ -140,8 +146,11 @@ public class AtomCount : MonoBehaviour {
             else GameObject.FindGameObjectWithTag("Voltage").GetComponentInChildren<Image>().color = new Color(0f / 255f, 0f / 255f, 0f / 255f);
         }
 
-        float targetVoltage = 0;
+        
         if (GameObject.FindGameObjectsWithTag("VoltageChanger").Length > 0) targetVoltage = GameObject.FindGameObjectWithTag("VoltageChanger").GetComponent<Slider>().value;
         reflectChance = 100.0f * Mathf.Abs((voltage/maxVoltage) - (targetVoltage/maxVoltage));
+        //Debug.Log("reflectchance = " + reflectChance + ", voltage = " + voltage + ", maxVoltage = " + maxVoltage + ", i = " + i);
+        i++;
+        Debug.Log("voltageInner = " + voltageInner + ", voltageOuter = " + voltageOuter);
     }
 }

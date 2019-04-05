@@ -439,7 +439,7 @@ Prefab:
     - target: {fileID: 114311224307148238, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224948499814357416, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
@@ -561,7 +561,7 @@ Prefab:
       value: ' Voltage Changer
 
 
-        -80          0          80'
+        -200         0         200'
       objectReference: {fileID: 0}
     - target: {fileID: 1037271769163556, guid: 64fff29ffd0db434ab21654e3c3636a2, type: 2}
       propertyPath: m_Name
@@ -624,31 +624,36 @@ Prefab:
     - target: {fileID: 114311224307148238, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
       propertyPath: m_MinValue
-      value: -80
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 224391775512129606, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0.50625
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224391775512129606, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.50625
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224847549460765028, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.50625
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114311224307148238, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
       propertyPath: m_MaxValue
-      value: 80
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1064718147338936, guid: 64fff29ffd0db434ab21654e3c3636a2, type: 2}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311224307148238, guid: 64fff29ffd0db434ab21654e3c3636a2,
+        type: 2}
+      propertyPath: m_Value
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64fff29ffd0db434ab21654e3c3636a2, type: 2}

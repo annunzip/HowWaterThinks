@@ -42,8 +42,8 @@ public class RunControl : MonoBehaviour
             GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value = atoms.GetComponent<CreateAtoms>().numberOfSodiumAtoms;
             GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value = atoms.GetComponent<CreateAtoms>().numberOfChlorineAtoms;
             GameObject.FindGameObjectWithTag("NumKIons").GetComponent<Slider>().value = atoms.GetComponent<CreateAtoms>().numberOfPotassiumAtoms;
-            GameObject.FindGameObjectWithTag("VoltageChanger").GetComponent<Slider>().maxValue = 300;
-            GameObject.FindGameObjectWithTag("VoltageChanger").GetComponent<Slider>().minValue = -300;
+            //GameObject.FindGameObjectWithTag("VoltageChanger").GetComponent<Slider>().maxValue = 300;
+            //GameObject.FindGameObjectWithTag("VoltageChanger").GetComponent<Slider>().minValue = -300;
         }
         else if (sceneName == "Scene 1")
         {

@@ -14,13 +14,33 @@ public class HandleForceTrigger : MonoBehaviour {
     {
         bool letThrough = false;
         float reflectChance = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().reflectChance;
-        if (reflectChance < 5) reflectChance = 5.0f;
+        if (reflectChance < 3) reflectChance = 3.0f;
         if (Random.Range(1.0f, 100.0f) <= reflectChance) letThrough = true;
+
+        float voltageOuter = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltageOuter();
+        float voltageInner = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltageInner();
 
         if (this.tag == "NaForce")
         {
             if (c.gameObject.tag == "SodiumAtom")
             {
+                if (voltageInner > GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getTargetVoltage())
+                {
+                    if (c.gameObject.transform.position.y <= 214.95)
+                    {
+                        //Debug.Log("100% chance of sodium from inner to outer.");
+                        return;
+                    }
+                }
+                if (voltageOuter > GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getTargetVoltage())
+                {
+                    if (c.gameObject.transform.position.y > 214.95)
+                    {
+                        //Debug.Log("100% chance of sodium from outer to inner.");
+                        return;
+                    }
+                }
+
                 if (!letThrough)
                 {
                     if (c.gameObject.transform.position.y > 214.95)
@@ -67,6 +87,23 @@ public class HandleForceTrigger : MonoBehaviour {
             }
             else if (c.gameObject.tag == "ChlorineAtom")
             {
+                if (voltageInner < GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getTargetVoltage())
+                {
+                    if (c.gameObject.transform.position.y <= 214.95)
+                    {
+                        //Debug.Log("100% chance of chlorine from inner to outer.");
+                        return;
+                    }
+                }
+                if (voltageOuter < GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getTargetVoltage())
+                {
+                    if (c.gameObject.transform.position.y > 214.95)
+                    {
+                        //Debug.Log("100% chance of chlorine from outer to inner.");
+                        return;
+                    }
+                }
+
                 if (!letThrough)
                 {
                     if (c.gameObject.transform.position.y > 214.95)
@@ -133,6 +170,6 @@ public class HandleForceTrigger : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		
+        //Debug.Log(GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getTargetVoltage());
 	}
 }
