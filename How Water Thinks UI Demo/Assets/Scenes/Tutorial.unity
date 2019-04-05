@@ -3402,7 +3402,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'This is an introduction to the 3D model.
 
-    Click "Next" to progreess to the game UI and capabilities.'
+    Click "Next" to progress to the game.'
 --- !u!222 &1367003615
 CanvasRenderer:
   m_ObjectHideFlags: 0

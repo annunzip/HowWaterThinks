@@ -368,34 +368,34 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Now imagine we have two types of ions, dark-blue sodium (Na+) outside the
-    cell and light-blue potassium (K+) inside the cell. Again, let\u2019s imagine
-    the charges are turned off so that the ions will not blow through the box walls
-    and scatter to the four corners. \r\n\r\nThis time we have two possible holes
-    in the membrane, one that only allows Na+ through in both directions and one that
-    only allows K+ through in both directions. Now suppose we close the potassium
-    channel and open the sodium channel. Try it with the toggles on the left. The
-    K+ is trapped inside the cell, while the Na+ can work its way back and forth across
-    the membrane. After a sufficient time, the Na+ will be equally spread across both
-    sides of the membrane while the K+ will only be on the inside.\v\r\nNow suppose
-    we open both channels (try it). The ions will spread such that the concentrations
-    of both Na+ and K+ are equal on both sides of the membrane. We see nothing surprising
-    so far.\r\n\n~~~~~~~~~~~~~~~~~~~~~~~~~\n\nLet\u2019s do a simple exercise. Let\u2019s
-    create a situation with zero voltage across the membrane. Then let\u2019s open
-    a channel to create a voltage difference. Finally, let\u2019s open another channel
-    to bring the voltage back to zero. Why would we want to do this? If we, or rather
-    Nature, can manipulate voltages, then the system can communicate and even compute.\r\n\r\nStart
-    with all channels closed. Now create equal numbers of Na+ and K+ ions, with Na+
-    outside the cell and K+ inside the cell. Then let\u2019s match each positive ion
-    with a negative ion such that there are equal numbers of Cl- ions on each side
-    of the membrane. You should see that the voltage across the membrane is zero.\r\n\r\nNow
-    open a Na+ channel. We see some of the Na+ move from the outside to the inside
-    and the voltage increase across the membrane because there are now more net positive
-    charge on the inside than on the outside. Now open the K+ channel. We see some
-    of the K+ move from the inside to the outside neutralizing the net charge and
-    bringing the voltage back to zero.\r\n\r\nWe have just manipulated the voltage
-    by opening and closing channels. We made a primitive computer circuit. How might
-    Nature do this without our intervention?\n\n~~~~~~~~~~~~~~~~~~~~~~~~~\n\nNature
+  m_Text: "Okay, let\u2019s add one more ion, Chloride Cl- (Red), to the scene. Chloride
+    has a negative charge that we can use to balance the positive charges of the other
+    two ions. If we have as many Cl- ions as we have positive ions, we have charge
+    balance for the system and we do not need to worry about the ions smashing through
+    the box to escape an excess of net charge. We can turn on the charges of the ions
+    with impunity, but not without consequences.\r\n\r\nIf there is an excess of net
+    charge on one side of the membrane or the other, there is an electric force on
+    the ions that will act to neutralize the charges. This electric force is represented
+    by a voltage across the membrane, which is quantified by the Nernst Equation.
+    \r\n\r\nPlay around. Open and close the three ion channels. Start out with different
+    numbers of ions on each side of the membrane. Watch what happens to the voltmeter.
+    Do some final states have values on the voltmeter that are not zero, indicating
+    that, in the resting state an electric force exists across the membrane.\r\n\n~~~~~~~~~~~~~~~~~~~~~~~~~\n\nLet\u2019s
+    do a simple exercise. Let\u2019s create a situation with zero voltage across the
+    membrane. Then let\u2019s open a channel to create a voltage difference. Finally,
+    let\u2019s open another channel to bring the voltage back to zero. Why would we
+    want to do this? If we, or rather Nature, can manipulate voltages, then the system
+    can communicate and even compute.\r\n\r\nStart with all channels closed. Now create
+    equal numbers of Na+ and K+ ions, with Na+ outside the cell and K+ inside the
+    cell. Then let\u2019s match each positive ion with a negative ion such that there
+    are equal numbers of Cl- ions on each side of the membrane. You should see that
+    the voltage across the membrane is zero.\r\n\r\nNow open a Na+ channel. We see
+    some of the Na+ move from the outside to the inside and the voltage increase across
+    the membrane because there are now more net positive charge on the inside than
+    on the outside. Now open the K+ channel. We see some of the K+ move from the inside
+    to the outside neutralizing the net charge and bringing the voltage back to zero.\r\n\r\nWe
+    have just manipulated the voltage by opening and closing channels. We made a primitive
+    computer circuit. How might Nature do this without our intervention?\n\n~~~~~~~~~~~~~~~~~~~~~~~~~\n\nNature
     has several mechanisms for opening and closing channels, but the voltage trigger
     is very important for biological computation. \r\n\r\nA little more negative charge
     exists inside the cell than outside the cell in real biological situations. This
