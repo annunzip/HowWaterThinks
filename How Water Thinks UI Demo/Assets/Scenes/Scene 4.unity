@@ -6265,6 +6265,34 @@ Prefab:
       value: 
       objectReference: {fileID: 12800000, guid: d7f1e6aa786645a428856a85b74cd456,
         type: 3}
+    - target: {fileID: 114352262146236390, guid: 895c348e040b15a4cb7c98361fc228fc,
+        type: 2}
+      propertyPath: m_MaxValue
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 224100577736427894, guid: 895c348e040b15a4cb7c98361fc228fc,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 224100577736427894, guid: 895c348e040b15a4cb7c98361fc228fc,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 224908016757690710, guid: 895c348e040b15a4cb7c98361fc228fc,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 114710568459561098, guid: 895c348e040b15a4cb7c98361fc228fc,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Number of Cl Ions
+
+
+        0          50         200'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 895c348e040b15a4cb7c98361fc228fc, type: 2}
   m_IsPrefabAsset: 0
