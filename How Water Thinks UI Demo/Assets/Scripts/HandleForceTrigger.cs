@@ -14,17 +14,18 @@ public class HandleForceTrigger : MonoBehaviour {
     {
         bool letThrough = false;
         float reflectChance = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().reflectChance;
-        if (reflectChance < 3) reflectChance = 3.0f;
+        //if (reflectChance < 3) reflectChance = 3.0f;
         if (Random.Range(1.0f, 100.0f) <= reflectChance) letThrough = true;
 
-        float voltageOuter = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltageOuter();
-        float voltageInner = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltageInner();
+        //float voltageOuter = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltageOuter();
+        //float voltageInner = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltageInner();
+        float totalVoltage = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltage();
 
         if (this.tag == "NaForce")
         {
             if (c.gameObject.tag == "SodiumAtom")
             {
-                if (voltageInner > GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getTargetVoltage())
+                if (totalVoltage > (GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getTargetVoltage()))
                 {
                     if (c.gameObject.transform.position.y <= 214.95)
                     {
@@ -32,7 +33,7 @@ public class HandleForceTrigger : MonoBehaviour {
                         return;
                     }
                 }
-                if (voltageOuter > GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getTargetVoltage())
+                if (totalVoltage < (GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getTargetVoltage()))
                 {
                     if (c.gameObject.transform.position.y > 214.95)
                     {
@@ -87,7 +88,7 @@ public class HandleForceTrigger : MonoBehaviour {
             }
             else if (c.gameObject.tag == "ChlorineAtom")
             {
-                if (voltageInner < GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getTargetVoltage())
+                if (totalVoltage < (GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getTargetVoltage()))
                 {
                     if (c.gameObject.transform.position.y <= 214.95)
                     {
@@ -95,7 +96,7 @@ public class HandleForceTrigger : MonoBehaviour {
                         return;
                     }
                 }
-                if (voltageOuter < GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getTargetVoltage())
+                if (totalVoltage > (GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getTargetVoltage()))
                 {
                     if (c.gameObject.transform.position.y > 214.95)
                     {
