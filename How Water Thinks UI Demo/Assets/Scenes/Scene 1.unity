@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -533,8 +533,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25.7, y: -166.65}
-  m_SizeDelta: {x: 1222.6, y: 633.3}
+  m_AnchoredPosition: {x: -18.5, y: -339.9}
+  m_SizeDelta: {x: 1237, y: 979.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &67082813
 MonoBehaviour:
@@ -570,17 +570,23 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "In this first scene, you see a representation of a membrane that separates
     the inside (bottom) of a cell from the outside (top).  The membrane separates
-    several sodium (NA+) ions on the outside of the cell from the inside. The NA+
-    ion actually has a positive charge, which, for the moment, we have turned off
-    so that we can describe diffusion across the membrane. Otherwise the positive
-    charges would strongly repel each other, and the ions would be scattered to the
-    winds.\r\n\r\nIf we create a hole, or channel, in the membrane by pressing the
-    Open Channel toggle on the left, Na+ ions find their way from the outside to the
-    inside. Some ions that make it to the inside will find their way back to the outside.
-    After a long time, equal numbers of ions will work their way outside as inside
-    and the concentrations of ions will be the same on each side of the membrane.
-    This state is the resting state of this system.\r\n\r\nWe can think of this process
-    as a tendency of ions of high concentration migrating to areas of low concentration.\r\n"
+    several sodium (Na+) ions on the outside of the cell from the inside. The Na+
+    ion actually has a positive charge, which, for the moment, we imagine to be turned
+    off so that we can describe ordinary diffusion across the membrane. In real life,
+    with only positive charges present, the positive charges would strongly repel
+    each other, and the ions would be scattered to the winds if the force is strong
+    enough to press the ions through the sides of the box. If the force is not strong
+    enough, then charges outside the box will create an electric field that reduces
+    the force on the ions. These are not the kinds of effects we want to examine at
+    the moment. We will return to charged ions momentarily.\r\n\r\nNow, let\u2019s
+    imagine a situation in. which there is a channel through the membrane. If we create
+    a hole, or channel, in the membrane by pressing the Open Channel toggle on the
+    left, Na+ ions find their way from the outside to the inside. Some ions that make
+    it to the inside will find their way back to the outside. After a long time, equal
+    numbers of ions will work their way outside as inside and the concentrations of
+    ions will be the same on each side of the membrane. This state is the resting
+    state of this system.\r\n\r\nWe can think of this process as a tendency of ions
+    of high concentration migrating to areas of low concentration.\r"
 --- !u!222 &67082814
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5328,8 +5334,8 @@ RectTransform:
   m_Father: {fileID: 1144180308}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.55550295}
-  m_AnchorMax: {x: 1, y: 0.970788}
+  m_AnchorMin: {x: 0, y: 0.7127181}
+  m_AnchorMax: {x: 1, y: 0.9811677}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7875,8 +7881,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1086542415}
   m_HandleRect: {fileID: 1086542414}
   m_Direction: 2
-  m_Value: 0.9500406
-  m_Size: 0.41528505
+  m_Value: 0.97425693
+  m_Size: 0.26844954
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

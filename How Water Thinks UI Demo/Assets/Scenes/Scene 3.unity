@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5271,19 +5271,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Now imagine we have two types of ions, dark-blue sodium (Na+) outside the
-    cell and light-blue potassium (K+) inside the cell. Again, let\u2019s imagine
-    the charges are turned off so that the ions will not blow through the box walls
-    and scatter to the four corners. \r\n\r\nThis time we have two possible holes
-    in the membrane, one that only allows Na+ through in both directions and one that
-    only allows K+ through in both directions. Now suppose we close the potassium
-    channel and open the sodium channel. Try it with the toggles on the left. The
-    K+ is trapped inside the cell, while the Na+ can work its way back and forth across
-    the membrane. After a sufficient time, the Na+ will be equally spread across both
-    sides of the membrane while the K+ will only be on the inside.\v\r\nNow suppose
-    we open both channels (try it). The ions will spread such that the concentrations
-    of both Na+ and K+ are equal on both sides of the membrane. We see nothing surprising
-    so far.\r\n"
+  m_Text: This time we have two possible channels in the membrane, one that only allows
+    Na+ through in both directions (Sodium Channel) and one that only allows K+ through
+    in both directions (Potassium Channel). Now suppose we open both channels (try
+    it). The ions will spread such that the concentrations of both Na+ and K+ are
+    equal on both sides of the membrane. We see nothing surprising so far. This is
+    all very intuitive.
 --- !u!222 &968328494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9520,8 +9513,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 347007809}
   m_HandleRect: {fileID: 347007808}
   m_Direction: 2
-  m_Value: 0.980121
-  m_Size: 0.4519186
+  m_Value: 0.98012084
+  m_Size: 0.45191854
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

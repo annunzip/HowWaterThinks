@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7441,8 +7441,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1098664053}
   m_HandleRect: {fileID: 1098664052}
   m_Direction: 2
-  m_Value: 0.9756456
-  m_Size: 0.16078743
+  m_Value: 0.99999994
+  m_Size: 0.47929388
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7760,8 +7760,8 @@ RectTransform:
   m_Father: {fileID: 560674444}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.81877404}
-  m_AnchorMax: {x: 1, y: 0.97956145}
+  m_AnchorMin: {x: 0, y: 0.5207061}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -10582,8 +10582,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.5001, y: -1247}
-  m_SizeDelta: {x: 1250, y: 3124}
+  m_AnchoredPosition: {x: -16.75, y: -272.85}
+  m_SizeDelta: {x: 1234, y: 1048}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1637785022
 MonoBehaviour:
@@ -10617,7 +10617,25 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "Let\u2019s do a simple exercise. Let\u2019s create a situation with zero
+    voltage across the membrane. Then let\u2019s open a channel to create a voltage
+    difference. Finally, let\u2019s open another channel to bring the voltage back
+    to zero. Why would we want to do this? If we, or rather Nature, can manipulate
+    voltages, then the system can communicate and even compute.\r\nIn order to see
+    what is going on, let\u2019s make the Cl- ions invisible. Moreover, let\u2019s
+    put equal numbers of Cl- ions on each side of the membrane. Finally, let\u2019s
+    close the Cl- channel. The main role of the Cl- is now to neutralize the charges
+    of the positive ions to keep the box from blowing apart. All the action is performed
+    by the two types of positive ions.\r\n\r\nStart with all positive channels closed.
+    Now create equal numbers of Na+ and K+ ions, with Na+ outside the cell and K+
+    inside the cell. You should see that the voltage across the membrane is zero.\r\n\r\nNow
+    open a Na+ channel. We see some of the Na+ move from the outside to the inside
+    and the voltage increase across the membrane because more net positive charges
+    on the inside than on the outside. Now open the K+ channel. We see some of the
+    K+ move from the inside to the outside neutralizing the net charge and bringing
+    the voltage back to zero.\r\n\r\nWe have just manipulated the voltage by opening
+    and closing channels. We made a primitive computer circuit. How might Nature do
+    this without our intervention?\r"
 --- !u!222 &1637785023
 CanvasRenderer:
   m_ObjectHideFlags: 0
