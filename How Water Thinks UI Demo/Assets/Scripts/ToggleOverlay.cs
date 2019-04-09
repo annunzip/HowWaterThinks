@@ -31,6 +31,12 @@ public class ToggleOverlay : MonoBehaviour {
         settingsOverlay.gameObject.SetActive(true);
     }
 
+    public void DisableSettingsOverlay(GameObject settingsOverlay)
+    {
+        simulationCanvas.gameObject.SetActive(true);
+        settingsOverlay.gameObject.SetActive(false);
+    }
+
     public void Test()
     {
 
