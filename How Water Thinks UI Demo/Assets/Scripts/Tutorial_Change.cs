@@ -5,14 +5,18 @@ using UnityEngine.UI;
 using UnityEditor;
 
 public class Tutorial_Change : MonoBehaviour {
-	public Button butt;
-	public Canvas CanvasA;
+    public Button backbtn;
+    public Button nextbtn;
+    public Canvas CanvasA;
 	public Canvas CanvasB;
 
 	// Use this for initialization
 	void Start () {
-		Button btn = butt.GetComponent<Button>();
-		btn.onClick.AddListener(TaskOnClick);
+        //Debug.Log(this.name);
+		Button btn1 = backbtn.GetComponent<Button>();
+		btn1.onClick.AddListener(TaskOnClick);
+        Button btn2 = nextbtn.GetComponent<Button>();
+        btn2.onClick.AddListener(TaskOnClick);
         CanvasA.gameObject.SetActive(true);
         CanvasB.gameObject.SetActive(false);
     }
