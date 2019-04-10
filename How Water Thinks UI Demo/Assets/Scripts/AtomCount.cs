@@ -148,9 +148,10 @@ public class AtomCount : MonoBehaviour {
 
         
         if (GameObject.FindGameObjectsWithTag("VoltageChanger").Length > 0) targetVoltage = GameObject.FindGameObjectWithTag("VoltageChanger").GetComponent<Slider>().value;
-        reflectChance = 100.0f * Mathf.Abs((voltage/maxVoltage) - (targetVoltage/maxVoltage));
+        //reflectChance = 100.0f * Mathf.Abs((voltage/maxVoltage) - (targetVoltage/maxVoltage));
+        reflectChance = 0;
         //Debug.Log("reflectchance = " + reflectChance + ", voltage = " + voltage + ", maxVoltage = " + maxVoltage + ", i = " + i);
-        i++;
-        Debug.Log("voltageInner = " + voltageInner + ", voltageOuter = " + voltageOuter);
+        //i++;
+        //Debug.Log("voltageInner = " + voltageInner + ", voltageOuter = " + voltageOuter);
     }
 }

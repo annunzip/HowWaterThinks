@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -820,7 +820,7 @@ Prefab:
     - target: {fileID: 114311224307148238, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
       propertyPath: m_MinValue
-      value: -200
+      value: -300
       objectReference: {fileID: 0}
     - target: {fileID: 224391775512129606, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
@@ -840,7 +840,7 @@ Prefab:
     - target: {fileID: 114311224307148238, guid: 64fff29ffd0db434ab21654e3c3636a2,
         type: 2}
       propertyPath: m_MaxValue
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1064718147338936, guid: 64fff29ffd0db434ab21654e3c3636a2, type: 2}
       propertyPath: m_TagString
@@ -10937,8 +10937,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1098664053}
   m_HandleRect: {fileID: 1098664052}
   m_Direction: 2
-  m_Value: 0.9999998
-  m_Size: 0.47929382
+  m_Value: 1
+  m_Size: 0.47929388
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12629,7 +12629,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4741600173606544, guid: e4ec83c39f312f64d961a61c9938dc2b, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.25000012
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1101389626166888, guid: e4ec83c39f312f64d961a61c9938dc2b, type: 2}
       propertyPath: m_IsActive
@@ -13453,7 +13453,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4741600173606544, guid: 93f10c521a7b11248ae467926e2fec59, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.25000012
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4741600173606544, guid: 93f10c521a7b11248ae467926e2fec59, type: 2}
       propertyPath: m_LocalScale.x
@@ -14412,12 +14412,12 @@ Prefab:
     - target: {fileID: 114018876896816170, guid: 1c8a6b4a6b5b8de44ae049d205291b57,
         type: 2}
       propertyPath: numberOfSodiumAtoms
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 114018876896816170, guid: 1c8a6b4a6b5b8de44ae049d205291b57,
         type: 2}
       propertyPath: numberOfChlorineAtoms
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 114018876896816170, guid: 1c8a6b4a6b5b8de44ae049d205291b57,
         type: 2}
@@ -14428,6 +14428,11 @@ Prefab:
     - target: {fileID: 4656816715615862, guid: 1c8a6b4a6b5b8de44ae049d205291b57, type: 2}
       propertyPath: m_LocalScale.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114018876896816170, guid: 1c8a6b4a6b5b8de44ae049d205291b57,
+        type: 2}
+      propertyPath: numberOfPotassiumAtoms
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c8a6b4a6b5b8de44ae049d205291b57, type: 2}
@@ -14548,7 +14553,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4741600173606544, guid: e0df481e9aaa6de4bb824f3f25cb3847, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.25000012
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0df481e9aaa6de4bb824f3f25cb3847, type: 2}
@@ -17082,8 +17087,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 366, y: -187}
-  m_SizeDelta: {x: 250, y: 30}
+  m_AnchoredPosition: {x: 322.5, y: -194}
+  m_SizeDelta: {x: 203.3, y: 44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1804923423
 MonoBehaviour:

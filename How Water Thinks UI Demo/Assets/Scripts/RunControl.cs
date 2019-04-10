@@ -67,7 +67,8 @@ public class RunControl : MonoBehaviour
             RemoveAllMolecules();
             atoms.GetComponent<CreateAtoms>().StartCreatingMolecules(1, 1);
             RemoveAllMolecules();
-            GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 95, 100, 5);
+            GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, atoms.GetComponent<CreateAtoms>().numberOfSodiumAtoms, atoms.GetComponent<CreateAtoms>().numberOfChlorineAtoms, atoms.GetComponent<CreateAtoms>().numberOfPotassiumAtoms);
+
         }
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10120,7 +10120,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4741600173606544, guid: e4ec83c39f312f64d961a61c9938dc2b, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.2500001
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1101389626166888, guid: e4ec83c39f312f64d961a61c9938dc2b, type: 2}
       propertyPath: m_IsActive
@@ -10986,7 +10986,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4741600173606544, guid: 93f10c521a7b11248ae467926e2fec59, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.25000012
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4741600173606544, guid: 93f10c521a7b11248ae467926e2fec59, type: 2}
       propertyPath: m_LocalScale.x
@@ -15652,8 +15652,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 347007809}
   m_HandleRect: {fileID: 347007808}
   m_Direction: 2
-  m_Value: 0.980121
-  m_Size: 0.4519186
+  m_Value: 0.98012096
+  m_Size: 0.45191854
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

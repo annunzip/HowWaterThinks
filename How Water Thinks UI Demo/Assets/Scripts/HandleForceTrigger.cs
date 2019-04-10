@@ -14,7 +14,7 @@ public class HandleForceTrigger : MonoBehaviour {
     {
         bool letThrough = false;
         float reflectChance = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().reflectChance;
-        if (reflectChance < 2) reflectChance = 2.0f;
+        //if (reflectChance < 2) reflectChance = 2.0f;
         if (Random.Range(1.0f, 100.0f) <= reflectChance) letThrough = true;
 
         //float voltageOuter = GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltageOuter();
@@ -29,7 +29,7 @@ public class HandleForceTrigger : MonoBehaviour {
                 {
                     if (c.gameObject.transform.position.y <= 214.95)
                     {
-                        //Debug.Log("100% chance of sodium from inner to outer.");
+                        Debug.Log("100% chance of sodium from inner to outer.");
                         return;
                     }
                 }
@@ -100,7 +100,7 @@ public class HandleForceTrigger : MonoBehaviour {
                 {
                     if (c.gameObject.transform.position.y > 214.95)
                     {
-                        //Debug.Log("100% chance of chlorine from outer to inner.");
+                        Debug.Log("100% chance of chlorine from outer to inner.");
                         return;
                     }
                 }
