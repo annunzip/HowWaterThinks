@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9296,6 +9296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1131891549}
   - component: {fileID: 1131891550}
+  - component: {fileID: 1131891551}
   m_Layer: 0
   m_Name: Toggle
   m_TagString: NaChannelToggle
@@ -9379,6 +9380,18 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
+--- !u!114 &1131891551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1131891548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483ba5489e597964bbdf26d06cd3d75b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 0.7004717, g: 0.9339623, b: 0.775962, a: 1}
 --- !u!1 &1138638469
 GameObject:
   m_ObjectHideFlags: 0
@@ -13422,7 +13435,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1086542414}
   m_Direction: 2
   m_Value: 0.974257
-  m_Size: 0.26844954
+  m_Size: 0.26844952
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
