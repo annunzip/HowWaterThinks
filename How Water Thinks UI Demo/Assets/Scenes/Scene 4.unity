@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6748,6 +6748,31 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 1092339343}
   m_GameObject: {fileID: 607805076}
   m_CullTransparentMesh: 0
+--- !u!1 &612637253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1155172219811634, guid: 8f7c13eddfb4f48419b5a3a6ac88c463,
+    type: 2}
+  m_PrefabInternal: {fileID: 1182536977}
+--- !u!114 &612637255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 612637253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483ba5489e597964bbdf26d06cd3d75b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 0.7137255, g: 0.78039217, b: 1, a: 1}
+  cb:
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: 0}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 0}
+    m_ColorMultiplier: 0
+    m_FadeDuration: 0
+  isOn: 0
 --- !u!1 &617660229
 GameObject:
   m_ObjectHideFlags: 0
@@ -9465,6 +9490,31 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 891768507}
   m_CullTransparentMesh: 0
+--- !u!1 &908209222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1728940917022226, guid: 8f7c13eddfb4f48419b5a3a6ac88c463,
+    type: 2}
+  m_PrefabInternal: {fileID: 1182536977}
+--- !u!114 &908209224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 908209222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483ba5489e597964bbdf26d06cd3d75b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0.5896226, b: 0.5896226, a: 1}
+  cb:
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: 0}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 0}
+    m_ColorMultiplier: 0
+    m_FadeDuration: 0
+  isOn: 0
 --- !u!1001 &908924973
 Prefab:
   m_ObjectHideFlags: 0
@@ -11714,6 +11764,31 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1145932002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1471749394333654, guid: 8f7c13eddfb4f48419b5a3a6ac88c463,
+    type: 2}
+  m_PrefabInternal: {fileID: 404477829}
+--- !u!114 &1145932004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1145932002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483ba5489e597964bbdf26d06cd3d75b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 0.6666667, g: 0.9764706, b: 1, a: 1}
+  cb:
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: 0}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 0}
+    m_ColorMultiplier: 0
+    m_FadeDuration: 0
+  isOn: 0
 --- !u!1001 &1149759206
 Prefab:
   m_ObjectHideFlags: 0
@@ -14256,6 +14331,31 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1385263390}
   m_CullTransparentMesh: 0
+--- !u!1 &1386929850 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1155172219811634, guid: 8f7c13eddfb4f48419b5a3a6ac88c463,
+    type: 2}
+  m_PrefabInternal: {fileID: 404477829}
+--- !u!114 &1386929852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386929850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483ba5489e597964bbdf26d06cd3d75b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 0.7137255, g: 0.78039217, b: 1, a: 1}
+  cb:
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: 0}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 0}
+    m_ColorMultiplier: 0
+    m_FadeDuration: 0
+  isOn: 0
 --- !u!1 &1387929178
 GameObject:
   m_ObjectHideFlags: 0
@@ -16039,6 +16139,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 417d55507faa6bf4b95d62197c1ce395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1618983558 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1728940917022226, guid: 8f7c13eddfb4f48419b5a3a6ac88c463,
+    type: 2}
+  m_PrefabInternal: {fileID: 404477829}
+--- !u!114 &1618983560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1618983558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483ba5489e597964bbdf26d06cd3d75b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0.5921569, b: 0.5921569, a: 1}
+  cb:
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: 0}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 0}
+    m_ColorMultiplier: 0
+    m_FadeDuration: 0
+  isOn: 0
 --- !u!1 &1628815710
 GameObject:
   m_ObjectHideFlags: 0
@@ -16600,6 +16725,31 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 1092339343}
   m_GameObject: {fileID: 1658499853}
   m_CullTransparentMesh: 0
+--- !u!1 &1663785947 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1471749394333654, guid: 8f7c13eddfb4f48419b5a3a6ac88c463,
+    type: 2}
+  m_PrefabInternal: {fileID: 1182536977}
+--- !u!114 &1663785949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1663785947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483ba5489e597964bbdf26d06cd3d75b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 0.6666667, g: 0.9764706, b: 1, a: 1}
+  cb:
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: 0}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 0}
+    m_ColorMultiplier: 0
+    m_FadeDuration: 0
+  isOn: 0
 --- !u!1001 &1671027030
 Prefab:
   m_ObjectHideFlags: 0

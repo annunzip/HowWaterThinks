@@ -8,6 +8,7 @@ public class CheckboxColor : MonoBehaviour {
 	//Colors
 	//Na+ is 182/199/255/255
 	//K+ is 170/249/255/255
+	//Cl is 255/151/151/255
 	
 	private Toggle checkbox;
 	public Color color;
