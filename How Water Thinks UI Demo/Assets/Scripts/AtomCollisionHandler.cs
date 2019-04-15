@@ -8,6 +8,7 @@ public class AtomCollisionHandler : MonoBehaviour {
     public Vector3 outVelA;
     public Vector3 inVelB;
     public Vector3 outVelB;
+    public AudioSource timAllen;
     // Use this for initialization
     void Start () {
 	    
@@ -19,6 +20,8 @@ public class AtomCollisionHandler : MonoBehaviour {
         {
             inVelA = this.GetComponent<Rigidbody>().velocity;
             inVelB = col.gameObject.GetComponent<Rigidbody>().velocity;
+            timAllen = this.GetComponent<AudioSource>();
+            timAllen.Play();
             //Debug.Log("inVel = " + inVelA);
         }
     }
@@ -43,6 +46,8 @@ public class AtomCollisionHandler : MonoBehaviour {
         {
             Vector3 vel = atom.gameObject.GetComponent<Rigidbody>().velocity;
             if (atom.GetComponent<Rigidbody>() != null) atom.GetComponent<Rigidbody>().velocity = -vel;
+            timAllen = this.GetComponent<AudioSource>();
+            timAllen.Play();
         } 
     }
 
