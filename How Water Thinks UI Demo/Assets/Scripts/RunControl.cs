@@ -152,10 +152,7 @@ public class RunControl : MonoBehaviour
         else if (GameObject.FindGameObjectWithTag("FastForward").GetComponent<Dropdown>().value == 2) Time.timeScale = 5;
         else if (GameObject.FindGameObjectWithTag("FastForward").GetComponent<Dropdown>().value == 3) Time.timeScale = 10;
         else if (GameObject.FindGameObjectWithTag("FastForward").GetComponent<Dropdown>().value == 4) Time.timeScale = 25;
-
-
     }
-
 
     // Update is called once per frame
     void Update()
