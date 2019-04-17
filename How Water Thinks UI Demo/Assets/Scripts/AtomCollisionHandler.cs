@@ -4,6 +4,22 @@ using UnityEngine;
 
 public class AtomCollisionHandler : MonoBehaviour {
 
+    public AudioSource collisionSound;
+
+    public void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "SodiumAtom" || col.gameObject.tag == "ChlorineAtom" || col.gameObject.tag == "PotassiumAtom")
+        {
+            collisionSound = this.GetComponent<AudioSource>();
+            collisionSound.Play();
+        }
+    }
+
+    /// <summary>
+    /// The script below is null and void. --No longer useful.
+    /// </summary>
+
+    /*
     public Vector3 inVelA;
     public Vector3 outVelA;
     public Vector3 inVelB;
@@ -57,11 +73,11 @@ public class AtomCollisionHandler : MonoBehaviour {
         float electricField = -(GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltageOuter() - GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltage()); //-(VO - VI) / h;
         //Debug.Log(atom.GetComponent<Rigidbody>());
         if (atom.GetComponent<Rigidbody>() != null) atom.GetComponent<Rigidbody>().AddForce(transform.up * charge * electricField);
-       /*if (atom.gameObject.tag == "PotassiumAtom")
+       if (atom.gameObject.tag == "PotassiumAtom")
         {
             Vector3 vel = atom.gameObject.GetComponent<Rigidbody>().velocity;
             if (atom.GetComponent<Rigidbody>() != null) atom.GetComponent<Rigidbody>().velocity = -vel;
-        } */
+        } 
     }
 
     public void OnTriggerExit(Collider atom)
@@ -70,15 +86,15 @@ public class AtomCollisionHandler : MonoBehaviour {
         float electricField = -(GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltageOuter() - GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getVoltage()); //-(VO - VI) / h;
         //Debug.Log(atom.GetComponent<Rigidbody>());
         if (atom.GetComponent<Rigidbody>() != null) atom.GetComponent<Rigidbody>().AddForce(transform.up * charge * electricField);
-        /* if (atom.gameObject.tag == "PotassiumAtom")
+         if (atom.gameObject.tag == "PotassiumAtom")
         {
             Vector3 vel = atom.gameObject.GetComponent<Rigidbody>().velocity;
             if (atom.GetComponent<Rigidbody>() != null) atom.GetComponent<Rigidbody>().velocity = -vel;
-        } */
+        } 
     }
 
     // Update is called once per frame
     void Update () {
 		
-	}
+	}*/
 }
