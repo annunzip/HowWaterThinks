@@ -10,8 +10,9 @@ public class AtomCollisionHandler : MonoBehaviour {
     {
         if (col.gameObject.tag == "SodiumAtom" || col.gameObject.tag == "ChlorineAtom" || col.gameObject.tag == "PotassiumAtom")
         {
-            collisionSound = this.GetComponent<AudioSource>();
-            collisionSound.Play();
+            //Uncomment two lines below to play sound on every atom collision.
+            //collisionSound = this.GetComponent<AudioSource>();
+            //collisionSound.Play();
         }
     }
 

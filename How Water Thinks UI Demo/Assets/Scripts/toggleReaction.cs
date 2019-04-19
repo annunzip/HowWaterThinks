@@ -131,6 +131,18 @@ public class toggleReaction : MonoBehaviour {
 
     }
 
+    public void ToggleFullscreen(Toggle fullscreenToggle)
+    {
+        if (fullscreenToggle.isOn)
+        {
+            Screen.SetResolution(Screen.width, Screen.height, true);
+        }
+        else
+        {
+            Screen.SetResolution(Screen.width, Screen.height, false);
+        }
+    }
+
     // Update is called once per frame
     void Update () {
 		

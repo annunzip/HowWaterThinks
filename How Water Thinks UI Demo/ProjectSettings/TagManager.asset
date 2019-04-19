@@ -37,6 +37,9 @@ TagManager:
   - ClChannelToggle
   - KChannelToggle
   - ModelMembrane
+  - VolumeSlider
+  - Resolution
+  - Fullscreen
   layers:
   - Default
   - TransparentFX

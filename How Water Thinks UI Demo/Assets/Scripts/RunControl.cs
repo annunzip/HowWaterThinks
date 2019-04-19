@@ -24,6 +24,28 @@ public class RunControl : MonoBehaviour
 
         GameObject atoms = GameObject.FindGameObjectWithTag("Atoms");
 
+        AudioListener.volume = 0.5f;
+        if (GameObject.FindGameObjectsWithTag("VolumeSlider").Length > 0) GameObject.FindGameObjectWithTag("VolumeSlider").GetComponent<Slider>().value = AudioListener.volume;
+
+        if (GameObject.FindGameObjectsWithTag("Resolution").Length > 0)
+        {
+            if (Screen.currentResolution.width == 1280) GameObject.FindGameObjectWithTag("Resolution").GetComponent<Dropdown>().value = 0;
+            else
+            if (Screen.currentResolution.width == 1360) GameObject.FindGameObjectWithTag("Resolution").GetComponent<Dropdown>().value = 1;
+            else
+            if (Screen.currentResolution.width == 1366) GameObject.FindGameObjectWithTag("Resolution").GetComponent<Dropdown>().value = 2;
+            else
+            if (Screen.currentResolution.width == 1600) GameObject.FindGameObjectWithTag("Resolution").GetComponent<Dropdown>().value = 3;
+            else
+            if (Screen.currentResolution.width == 1920) GameObject.FindGameObjectWithTag("Resolution").GetComponent<Dropdown>().value = 4;
+        }
+
+        if (GameObject.FindGameObjectsWithTag("Fullscreen").Length > 0)
+        {
+            if (Screen.fullScreen) GameObject.FindGameObjectWithTag("Fullscreen").GetComponent<Toggle>().isOn = true;
+            else GameObject.FindGameObjectWithTag("Fullscreen").GetComponent<Toggle>().isOn = false;
+        }
+
         if (sceneName == "Scene 4")
         {
 
@@ -167,6 +189,11 @@ public class RunControl : MonoBehaviour
                     GameObject.Find("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 0, 0, 1);
                 }
             }
+        }
+
+        if (GameObject.FindGameObjectsWithTag("VolumeSlider").Length > 0)
+        {
+            AudioListener.volume = GameObject.FindGameObjectWithTag("VolumeSlider").GetComponent<Slider>().value;
         }
     }
 }
