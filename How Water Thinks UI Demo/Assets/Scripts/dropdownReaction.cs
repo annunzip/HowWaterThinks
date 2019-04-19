@@ -15,7 +15,6 @@ public class dropdownReaction : MonoBehaviour {
     {
         //Dropdown resDD = GameObject.FindGameObjectWithTag("Resolution").GetComponent<Dropdown>();
         Dropdown resDD = GameObject.FindGameObjectWithTag("Resolution").GetComponent<Dropdown>();
-        Debug.Log(resDD.value);
         int newWidth = 1280, newHeight = 720;
         if (resDD.value == 0) { newWidth = 1280; newHeight = 720; } else 
         if (resDD.value == 1) { newWidth = 1360; newHeight = 768; } else
