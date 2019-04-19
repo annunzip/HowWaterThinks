@@ -122,7 +122,7 @@ public class Spherical_Camera : MonoBehaviour
             transform.position -= transform.forward * zoomspeed * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.KeypadPlus) || Input.GetKey(KeyCode.Plus))
+        if (Input.GetKey(KeyCode.KeypadPlus) || Input.GetKey(KeyCode.Equals))
         {
             transform.position += transform.forward * zoomspeed * Time.deltaTime;
         }
