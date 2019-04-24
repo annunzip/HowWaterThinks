@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -757,7 +757,7 @@ Prefab:
       value: ' Voltage Changer
 
 
-        -200         0         200'
+        -71            0            71'
       objectReference: {fileID: 0}
     - target: {fileID: 1037271769163556, guid: 64fff29ffd0db434ab21654e3c3636a2, type: 2}
       propertyPath: m_Name
@@ -10923,7 +10923,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1098664052}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.47929382
+  m_Size: 0.47929388
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -14507,7 +14507,7 @@ Prefab:
     - target: {fileID: 114018876896816170, guid: 1c8a6b4a6b5b8de44ae049d205291b57,
         type: 2}
       propertyPath: numberOfChlorineAtoms
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114018876896816170, guid: 1c8a6b4a6b5b8de44ae049d205291b57,
         type: 2}
@@ -14522,7 +14522,7 @@ Prefab:
     - target: {fileID: 114018876896816170, guid: 1c8a6b4a6b5b8de44ae049d205291b57,
         type: 2}
       propertyPath: numberOfPotassiumAtoms
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c8a6b4a6b5b8de44ae049d205291b57, type: 2}

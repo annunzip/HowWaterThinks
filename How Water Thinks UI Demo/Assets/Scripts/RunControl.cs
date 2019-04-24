@@ -24,8 +24,17 @@ public class RunControl : MonoBehaviour
 
         GameObject atoms = GameObject.FindGameObjectWithTag("Atoms");
 
-        AudioListener.volume = 0.5f;
+        if (GameObject.FindGameObjectsWithTag("VolumeSlider").Length > 0) GameObject.FindGameObjectWithTag("VolumeSlider").GetComponent<Slider>().value = Globals.volume;
+        if (GameObject.FindGameObjectsWithTag("ColorblindToggle").Length > 0) GameObject.FindGameObjectWithTag("ColorblindToggle").GetComponent<Toggle>().isOn = Globals.colorblindOn;
+        if (GameObject.FindGameObjectsWithTag("Resolution").Length > 0) GameObject.FindGameObjectWithTag("Resolution").GetComponent<Dropdown>().value = Globals.windowSize;
+        if (GameObject.FindGameObjectsWithTag("Fullscreen").Length > 0) GameObject.FindGameObjectWithTag("Fullscreen").GetComponent<Toggle>().isOn = Globals.fullscreenOn;
+
+        if (Globals.colorblindOn) { (Resources.Load("Prefabs/sodiumAtom") as GameObject).GetComponent<Renderer>().material = Resources.Load("Materials/colorblind_sodium") as Material; } else { (Resources.Load("Prefabs/sodiumAtom") as GameObject).GetComponent<Renderer>().material = Resources.Load("Materials/sodiumAtom") as Material; }
+
+        /*AudioListener.volume = 0.5f;
         if (GameObject.FindGameObjectsWithTag("VolumeSlider").Length > 0) GameObject.FindGameObjectWithTag("VolumeSlider").GetComponent<Slider>().value = AudioListener.volume;
+        Debug.Log(AudioListener.volume);
+        Debug.Log(Globals.volume);
 
         if (GameObject.FindGameObjectsWithTag("Resolution").Length > 0)
         {
@@ -44,7 +53,7 @@ public class RunControl : MonoBehaviour
         {
             if (Screen.fullScreen) GameObject.FindGameObjectWithTag("Fullscreen").GetComponent<Toggle>().isOn = true;
             else GameObject.FindGameObjectWithTag("Fullscreen").GetComponent<Toggle>().isOn = false;
-        }
+        }*/
 
         if (sceneName == "Scene 4")
         {
@@ -92,6 +101,9 @@ public class RunControl : MonoBehaviour
             GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, atoms.GetComponent<CreateAtoms>().numberOfSodiumAtoms, atoms.GetComponent<CreateAtoms>().numberOfChlorineAtoms, atoms.GetComponent<CreateAtoms>().numberOfPotassiumAtoms);
 
         }
+
+        if (sceneName != "Main Menu") Globals.firstLaunch = true;
+
     }
 
 

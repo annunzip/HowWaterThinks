@@ -104,6 +104,7 @@ public class sliderReaction : MonoBehaviour {
     public void ChangeMasterVolume(Slider volumeSlider)
     {
         AudioListener.volume = volumeSlider.value;
+        Globals.volume = volumeSlider.value;
     }
 
     /*public void HandleInverseVoltmeterChange(Slider iVSlider)

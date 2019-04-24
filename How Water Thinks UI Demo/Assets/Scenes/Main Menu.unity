@@ -125,6 +125,8 @@ GameObject:
   - component: {fileID: 104173273}
   - component: {fileID: 104173275}
   - component: {fileID: 104173274}
+  - component: {fileID: 104173278}
+  - component: {fileID: 104173276}
   m_Layer: 0
   m_Name: RunControl
   m_TagString: RunControl
@@ -264,6 +266,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toggleAudio: {fileID: 8300000, guid: ce99fa1afc0759d43b6c44ab28e3ec12, type: 3}
   menuAudio: {fileID: 8300000, guid: ff8df27d69a1a7a42a7c6432eec508ec, type: 3}
+--- !u!114 &104173276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 104173271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e363eb2ccb110a44b06b280dcd34b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &104173277
 Transform:
   m_ObjectHideFlags: 0
@@ -277,6 +290,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &104173278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 104173271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5311f6d25219a7c4eb9d8420bd6b4489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &177338874
 GameObject:
   m_ObjectHideFlags: 0

@@ -121,25 +121,43 @@ public class toggleReaction : MonoBehaviour {
         }
     }
 
-    public void HandleWaterToggle(Toggle waterToggle)
-    {
-
-    }
-
-    public void HandleChargesToggle(Toggle chargesToggle)
-    {
-
-    }
-
     public void ToggleFullscreen(Toggle fullscreenToggle)
     {
         if (fullscreenToggle.isOn)
         {
             Screen.SetResolution(Screen.width, Screen.height, true);
+            Globals.fullscreenOn = true;
         }
         else
         {
             Screen.SetResolution(Screen.width, Screen.height, false);
+            Globals.fullscreenOn = false;
+        }
+    }
+
+    public void ToggleColorBlind(Toggle cbToggle)
+    {
+        GameObject sodiumAtom = Resources.Load("Prefabs/sodiumAtom") as GameObject;
+        Material cbNA = Resources.Load("Materials/colorblind_sodium") as Material;
+        Material normalNA = Resources.Load("Materials/sodiumAtom") as Material;
+
+        if (cbToggle.isOn)
+        {
+            foreach (GameObject atom in GameObject.FindGameObjectsWithTag("SodiumAtom"))
+            {
+                atom.GetComponent<Renderer>().material = cbNA;
+            }
+            sodiumAtom.GetComponent<Renderer>().material = cbNA;
+            Globals.colorblindOn = true;
+        }
+        else
+        {
+            foreach (GameObject atom in GameObject.FindGameObjectsWithTag("SodiumAtom"))
+            {
+                atom.GetComponent<Renderer>().material = normalNA;
+            }
+            sodiumAtom.GetComponent<Renderer>().material = normalNA;
+            Globals.colorblindOn = false;
         }
     }
 

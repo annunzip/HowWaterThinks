@@ -553,6 +553,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114383278991238338, guid: 1280b0a8e989dff4c99788e73b6ad7f2,
+        type: 2}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 224650539572238188, guid: 1280b0a8e989dff4c99788e73b6ad7f2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -683,6 +688,51 @@ Prefab:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 239461246}
+    - target: {fileID: 114383278991238338, guid: 1280b0a8e989dff4c99788e73b6ad7f2,
+        type: 2}
+      propertyPath: m_IsOn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114383278991238338, guid: 1280b0a8e989dff4c99788e73b6ad7f2,
+        type: 2}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114383278991238338, guid: 1280b0a8e989dff4c99788e73b6ad7f2,
+        type: 2}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114383278991238338, guid: 1280b0a8e989dff4c99788e73b6ad7f2,
+        type: 2}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 239461249}
+    - target: {fileID: 114383278991238338, guid: 1280b0a8e989dff4c99788e73b6ad7f2,
+        type: 2}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ToggleColorBlind
+      objectReference: {fileID: 0}
+    - target: {fileID: 114383278991238338, guid: 1280b0a8e989dff4c99788e73b6ad7f2,
+        type: 2}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Toggle, UnityEngine.UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 114383278991238338, guid: 1280b0a8e989dff4c99788e73b6ad7f2,
+        type: 2}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1897551700}
+    - target: {fileID: 1113106579326762, guid: 1280b0a8e989dff4c99788e73b6ad7f2, type: 2}
+      propertyPath: m_TagString
+      value: ColorblindToggle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1280b0a8e989dff4c99788e73b6ad7f2, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1897551700 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114383278991238338, guid: 1280b0a8e989dff4c99788e73b6ad7f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1897551699}
+  m_Script: {fileID: 2109663825, guid: f70555f144d8491a825f0804e09c671c, type: 3}
