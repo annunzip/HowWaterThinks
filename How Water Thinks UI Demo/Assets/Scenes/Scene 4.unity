@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2693,8 +2693,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 932403744}
   m_HandleRect: {fileID: 932403743}
   m_Direction: 2
-  m_Value: 0.50000006
-  m_Size: 0.57274795
+  m_Value: 0.5000002
+  m_Size: 0.5727479
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9477,7 +9477,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d7e10e465e58a5468ee1b78cb0c2f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  simulationCanvas: {fileID: 461591068}
 --- !u!114 &889702328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9489,10 +9488,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b690b1b14da656a4cb39e2f558325231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backbtn: {fileID: 0}
   nextbtn: {fileID: 0}
+  backbtn: {fileID: 0}
+  nextbtntwo: {fileID: 0}
+  backbtntwo: {fileID: 0}
   CanvasA: {fileID: 0}
   CanvasB: {fileID: 0}
+  CanvasC: {fileID: 0}
 --- !u!82 &889702329
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10525,10 +10527,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b690b1b14da656a4cb39e2f558325231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backbtn: {fileID: 76794857}
   nextbtn: {fileID: 1704878764}
+  backbtn: {fileID: 76794857}
+  nextbtntwo: {fileID: 0}
+  backbtntwo: {fileID: 0}
   CanvasA: {fileID: 411464340}
   CanvasB: {fileID: 1141970417}
+  CanvasC: {fileID: 0}
 --- !u!1 &968198720
 GameObject:
   m_ObjectHideFlags: 0
@@ -12015,7 +12020,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Scene 5
+          m_StringArgument: Scene 3
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 889702330}
