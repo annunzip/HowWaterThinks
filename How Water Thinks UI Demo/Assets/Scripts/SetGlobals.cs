@@ -11,6 +11,7 @@ public class SetGlobals : MonoBehaviour
         if (!Globals.firstLaunch)
         {
             Globals.volume = 0.5f;
+            AudioListener.volume = Globals.volume;
             Globals.colorblindOn = false;
 
             if (Screen.width == 1280) Globals.windowSize = 0;
