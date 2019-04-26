@@ -4062,6 +4062,10 @@ Prefab:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1355608585}
+    - target: {fileID: 1453027493978930, guid: 4a2c2c62d760a7647a0a65f743cb6d87, type: 2}
+      propertyPath: m_TagString
+      value: ColorblindToggle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a2c2c62d760a7647a0a65f743cb6d87, type: 2}
   m_IsPrefabAsset: 0

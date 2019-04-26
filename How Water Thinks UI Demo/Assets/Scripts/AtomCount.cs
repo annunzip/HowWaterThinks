@@ -87,9 +87,11 @@ public class AtomCount : MonoBehaviour {
         {
             if (atom.transform.position.y > 214.95)
             {
-                numAtomsOuter += 1;
+                /*numAtomsOuter += 1;
                 voltage--;
-                voltageOuter++;
+                voltageOuter++;*/
+                Destroy(atom);
+                GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 0, 0, 1);
             }
             else
             {

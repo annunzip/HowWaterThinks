@@ -46,7 +46,7 @@ public class MenuMusic : MonoBehaviour {
     void Update()
     {
         string currSceneName = SceneManager.GetActiveScene().name;
-        if (currSceneName != "Main Menu" && currSceneName != "Scene Selection" && currSceneName != "Settings Menu" && currSceneName != "Tutorial")
+        if (currSceneName != "Main Menu" && currSceneName != "Scene Selection" && currSceneName != "Settings Menu" && currSceneName != "Tutorial" && currSceneName != "About Scene")
         {
             //Destroy(this.gameObject);
             if (GetComponent<AudioSource>().clip == menuMusic)
