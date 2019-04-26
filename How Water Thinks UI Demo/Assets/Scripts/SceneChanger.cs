@@ -52,6 +52,11 @@ public class SceneChanger : MonoBehaviour {
         SceneManager.LoadScene(theScene);     
     }
 
+    public void infoScreen()
+    {
+        SceneManager.LoadScene("About Scene");
+    }
+
     //Update is called once per frame
     void Update () {
 		
