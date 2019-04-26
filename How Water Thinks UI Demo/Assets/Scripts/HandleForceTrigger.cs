@@ -159,11 +159,13 @@ public class HandleForceTrigger : MonoBehaviour {
                     if (c.gameObject.transform.position.y > 214.95)
                     {
                         c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
+                    Debug.Log("Yeet that shit up");
                     }
                     else
                     {
                         c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
-                    }
+                    Debug.Log("Yeet that shit down");
+                }
                 //}
             }
         }
