@@ -8384,7 +8384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1688055592
 AudioListener:
   m_ObjectHideFlags: 0
@@ -8728,8 +8728,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1086542415}
   m_HandleRect: {fileID: 1086542414}
   m_Direction: 2
-  m_Value: 0.974257
-  m_Size: 0.26844954
+  m_Value: 0.97425693
+  m_Size: 0.26844952
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
