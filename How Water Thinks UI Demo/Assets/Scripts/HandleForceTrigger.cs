@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HandleForceTrigger : MonoBehaviour {
+public class HandleForceTrigger : MonoBehaviour
+{
 
 
-	// Use this for initialization
-	void Start () {
-        
+    // Use this for initialization
+    void Start()
+    {
+
     }
 
     private void OnTriggerEnter(Collider c)
@@ -29,7 +31,7 @@ public class HandleForceTrigger : MonoBehaviour {
                 {
                     if (c.gameObject.transform.position.y <= 214.95)
                     {
-                        Debug.Log("100% chance of sodium from inner to outer.");
+                        //Debug.Log("100% chance of sodium from inner to outer.");
                         return;
                     }
                 }
@@ -53,16 +55,8 @@ public class HandleForceTrigger : MonoBehaviour {
                         c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
                     }
                 }
-            } else if (c.gameObject.tag == "ChlorineAtom")
-            {
-                if (c.gameObject.transform.position.y > 214.95)
-                {
-                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
-                } else
-                {
-                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
-                }
-            } else if (c.gameObject.tag == "PotassiumAtom")
+            }
+            else if (c.gameObject.tag == "ChlorineAtom")
             {
                 if (c.gameObject.transform.position.y > 214.95)
                 {
@@ -73,7 +67,19 @@ public class HandleForceTrigger : MonoBehaviour {
                     c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
                 }
             }
-        } else if (this.tag == "ClForce")
+            else if (c.gameObject.tag == "PotassiumAtom")
+            {
+                if (c.gameObject.transform.position.y > 214.95)
+                {
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
+                }
+                else
+                {
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
+                }
+            }
+        }
+        else if (this.tag == "ClForce")
         {
             if (c.gameObject.tag == "SodiumAtom")
             {
@@ -128,7 +134,8 @@ public class HandleForceTrigger : MonoBehaviour {
                     c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
                 }
             }
-        } else if (this.tag == "KForce")
+        }
+        else if (this.tag == "KForce")
         {
             if (c.gameObject.tag == "SodiumAtom")
             {
@@ -156,15 +163,13 @@ public class HandleForceTrigger : MonoBehaviour {
             {
                 //if (!letThrough)
                 //{
-                    if (c.gameObject.transform.position.y > 214.95)
-                    {
-                        c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
-                    Debug.Log("Yeet that shit up");
-                    }
-                    else
-                    {
-                        c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
-                    Debug.Log("Yeet that shit down");
+                if (c.gameObject.transform.position.y > 214.95)
+                {
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 100, 0));
+                }
+                else
+                {
+                    c.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -100, 0));
                 }
                 //}
             }
@@ -172,7 +177,8 @@ public class HandleForceTrigger : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
         //Debug.Log(GameObject.FindGameObjectWithTag("RunControl").GetComponent<AtomCount>().getTargetVoltage());
-	}
+    }
 }

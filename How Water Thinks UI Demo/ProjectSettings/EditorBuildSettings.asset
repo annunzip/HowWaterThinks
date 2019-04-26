@@ -9,8 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: b0417b270c654ac4dbca8b60c5ce44b0
   - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 1387ef2b7d2b3e94fb6945118059e827
+  - enabled: 1
+    path: Assets/Scenes/Scene Selection.unity
+    guid: 0e4f7029a8b5bb447bc39fb7767060ef
+  - enabled: 1
     path: Assets/Scenes/Settings Menu.unity
     guid: 6310aca1bfb5eaa448528376747e68fe
+  - enabled: 1
+    path: Assets/Scenes/About Scene.unity
+    guid: e5e168c0b5a4d0941b611e422a0e553b
   - enabled: 1
     path: Assets/Scenes/Scene 1.unity
     guid: 9199cb7f38bc89543afe0d5ddb8e74ef
@@ -21,20 +30,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene 3.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: 1387ef2b7d2b3e94fb6945118059e827
-  - enabled: 1
-    path: Assets/Scenes/Scene Selection.unity
-    guid: 0e4f7029a8b5bb447bc39fb7767060ef
-  - enabled: 1
     path: Assets/Scenes/Scene 4.unity
     guid: c5bb128274099b947bcbde16f7ffa6b1
   - enabled: 1
     path: Assets/Scenes/Scene 5.unity
     guid: d2b3ff3d561101146ad20c64f591ff78
-  - enabled: 1
-    path: Assets/Scenes/About Scene.unity
-    guid: e5e168c0b5a4d0941b611e422a0e553b
   - enabled: 1
     path: Assets/Scenes/What We Learned.unity
     guid: feb019d4de8a3d64787d47666a97bc86
