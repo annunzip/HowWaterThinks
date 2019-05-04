@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AtomCount : MonoBehaviour {
+public class AtomCount : MonoBehaviour
+{
 
     float targetVoltage;
-    int i = 0;
     public int numAtomsOuter;
     public int numAtomsInner;
     public float voltageOuter;
@@ -17,9 +17,10 @@ public class AtomCount : MonoBehaviour {
     //public float maxVoltage;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         targetVoltage = 0;
-	}
+    }
 
     public float getTargetVoltage()
     {
@@ -41,7 +42,8 @@ public class AtomCount : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
         //Getting the number of atoms inside and outside
         numAtomsOuter = 0;
         numAtomsInner = 0;
@@ -52,7 +54,8 @@ public class AtomCount : MonoBehaviour {
         //minVoltage = 0;
 
 
-        foreach (GameObject atom in GameObject.FindGameObjectsWithTag("SodiumAtom")) {
+        foreach (GameObject atom in GameObject.FindGameObjectsWithTag("SodiumAtom"))
+        {
             if (atom.transform.position.y > 214.95)
             {
                 numAtomsOuter++;
@@ -101,7 +104,7 @@ public class AtomCount : MonoBehaviour {
             }
         }
 
-        
+
         if (GameObject.FindGameObjectWithTag("AtomsOutsideCounterText") != null) GameObject.FindGameObjectWithTag("AtomsOutsideCounterText").GetComponent<Text>().text = "Atoms Outside: " + numAtomsOuter;
         if (GameObject.FindGameObjectWithTag("AtomsInsideCounterText") != null) GameObject.FindGameObjectWithTag("AtomsInsideCounterText").GetComponent<Text>().text = "Atoms Inside: " + numAtomsInner;
 
@@ -148,7 +151,7 @@ public class AtomCount : MonoBehaviour {
             else GameObject.FindGameObjectWithTag("Voltage").GetComponentInChildren<Image>().color = new Color(0f / 255f, 0f / 255f, 0f / 255f);
         }
 
-        
+
         if (GameObject.FindGameObjectsWithTag("VoltageChanger").Length > 0) targetVoltage = GameObject.FindGameObjectWithTag("VoltageChanger").GetComponent<Slider>().value;
         //reflectChance = 100.0f * Mathf.Abs((voltage/maxVoltage) - (targetVoltage/maxVoltage));
         reflectChance = 0;
