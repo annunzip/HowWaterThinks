@@ -5,18 +5,20 @@ using UnityEngine.UI;
 using System;
 using UnityEngine.SceneManagement;
 
-public class sliderReaction : MonoBehaviour {
+public class sliderReaction : MonoBehaviour
+{
 
     //public Slider ionSlider;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
 
     }
 
     public void HandleNaSliderChange(Slider naSlider)
     {
-       if (GameObject.FindGameObjectsWithTag("NumClIons").Length > 0 && GameObject.FindGameObjectsWithTag("NumNaIons").Length > 0 && GameObject.FindGameObjectsWithTag("NumKIons").Length > 0) 
+        if (GameObject.FindGameObjectsWithTag("NumClIons").Length > 0 && GameObject.FindGameObjectsWithTag("NumNaIons").Length > 0 && GameObject.FindGameObjectsWithTag("NumKIons").Length > 0)
             GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value = GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value + GameObject.FindGameObjectWithTag("NumKIons").GetComponent<Slider>().value;
 
         if (GameObject.FindGameObjectWithTag("naToggle").GetComponent<Toggle>().isOn)
@@ -50,7 +52,18 @@ public class sliderReaction : MonoBehaviour {
     public void HandleClSliderChange(Slider clSlider)
     {
         if (GameObject.FindGameObjectsWithTag("NumClIons").Length > 0 && GameObject.FindGameObjectsWithTag("NumNaIons").Length > 0 && GameObject.FindGameObjectsWithTag("NumKIons").Length > 0)
+        {
             GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value = GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value - GameObject.FindGameObjectWithTag("NumKIons").GetComponent<Slider>().value;
+
+            if (GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value == GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().maxValue)
+            {
+                GameObject.FindGameObjectWithTag("NumKIons").GetComponent<Slider>().value = GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value - GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value;
+            }
+            if (GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value == GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().minValue)
+            {
+                GameObject.FindGameObjectWithTag("NumKIons").GetComponent<Slider>().value = GameObject.FindGameObjectWithTag("NumClIons").GetComponent<Slider>().value - GameObject.FindGameObjectWithTag("NumNaIons").GetComponent<Slider>().value;
+            }
+        }
 
         if (GameObject.FindGameObjectWithTag("clToggle").GetComponent<Toggle>().isOn)
         {
@@ -86,8 +99,8 @@ public class sliderReaction : MonoBehaviour {
 
             if (numAtoms < (int)(kSlider.value))
             {
-                    GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 0, 0, (int)Math.Floor(kSlider.value - numAtoms));
-                    numAtoms++;
+                GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, 0, 0, (int)Math.Floor(kSlider.value - numAtoms));
+                numAtoms++;
             }
             else if (numAtoms > (int)(kSlider.value))
             {
@@ -192,7 +205,8 @@ public class sliderReaction : MonoBehaviour {
     }*/
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
         /*
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
@@ -201,4 +215,4 @@ public class sliderReaction : MonoBehaviour {
         }
         */
     }
-} 
+}

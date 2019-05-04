@@ -7023,7 +7023,7 @@ Prefab:
       value: 'Number of Cl Ions
 
 
-        0          50         200'
+        0           100         200'
       objectReference: {fileID: 0}
     - target: {fileID: 114352262146236390, guid: 895c348e040b15a4cb7c98361fc228fc,
         type: 2}
@@ -11629,6 +11629,14 @@ Prefab:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114873251686499968, guid: 1b258fa47235a5c4ea2b19079a532c5d,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Number of K Ions
+
+
+        0            50         100'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b258fa47235a5c4ea2b19079a532c5d, type: 2}
   m_IsPrefabAsset: 0
@@ -12911,6 +12919,14 @@ Prefab:
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114308019765394076, guid: 64fff29ffd0db434ab21654e3c3636a2,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Number of Na Ions
+
+
+        0            50         100'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64fff29ffd0db434ab21654e3c3636a2, type: 2}
