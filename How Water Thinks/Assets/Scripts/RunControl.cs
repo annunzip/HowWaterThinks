@@ -83,7 +83,7 @@ public class RunControl : MonoBehaviour
             RemoveAllMolecules();
             GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, atoms.GetComponent<CreateAtoms>().numberOfSodiumAtoms, atoms.GetComponent<CreateAtoms>().numberOfChlorineAtoms, atoms.GetComponent<CreateAtoms>().numberOfPotassiumAtoms);
         }
-        else if (sceneName == "Scene 2" ||sceneName == "Scene 3")
+        else if (sceneName == "Scene 2" || sceneName == "Scene 3")
         {
             RemoveAllMolecules();
             atoms.GetComponent<CreateAtoms>().StartCreatingMolecules(1, 1);
