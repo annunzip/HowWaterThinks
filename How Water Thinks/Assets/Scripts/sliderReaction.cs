@@ -31,7 +31,7 @@ public class sliderReaction : MonoBehaviour
             //Debug.Log("ionSlider.value = " + (int)(ionSlider.value));
             if (numAtoms < (int)(naSlider.value))
             {
-                Debug.Log(numAtoms);
+                //Debug.Log(numAtoms);
                 GameObject.FindGameObjectWithTag("Atoms").GetComponent<CreateAtoms>().AddNAtoms(1, 1, (int)Math.Floor(naSlider.value - numAtoms), 0, 0);
                 numAtoms++;
 

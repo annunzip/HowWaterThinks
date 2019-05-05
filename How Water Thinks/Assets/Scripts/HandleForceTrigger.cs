@@ -106,7 +106,7 @@ public class HandleForceTrigger : MonoBehaviour
                 {
                     if (c.gameObject.transform.position.y > 214.95)
                     {
-                        Debug.Log("100% chance of chlorine from outer to inner.");
+                        //Debug.Log("100% chance of chlorine from outer to inner.");
                         return;
                     }
                 }
