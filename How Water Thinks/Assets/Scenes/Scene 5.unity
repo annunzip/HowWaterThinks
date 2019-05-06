@@ -3336,16 +3336,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Now, it''s time to apply what we know. If we, acting as nature, can manipulate
-    the voltage, then we can watch the system communicate across the membrane. Let''s
-    make the Cl- ions invisible and restrict this model to only Na+ and K+. Slide
-    the slider bar to change the overall desired voltage of the model, and watch as
-    the ions move to balance out (you may want to set the speed to x25 in the top-right
-    of the screen). The ions in the membrane will move towards and eventually settle
-    around the target voltage. All the action is performed by the two types of positive
-    ions.
-
-'
+  m_Text: Now, it's time to apply what we know. If we, acting as nature, can manipulate
+    the voltage, then we can watch the system communicate across the membrane. Let's
+    make the Cl- ions invisible and restrict this model to only Na+ and K+. We'll
+    eliminate the Cl- channel as well. Slide the slider bar to change the overall
+    desired voltage of the model, and watch as the ions move to balance out (you may
+    want to set the speed to x25 in the top-right of the screen). All the Na+ starts
+    on the outside, with an equal number of K+ on the inside. The ions in the membrane
+    will move towards and eventually settle around the target voltage. All the action
+    is performed by the two types of positive ions. Not only can ion concentration
+    affect voltage, but voltage can affect ion concentration. This will be illustrated
+    in the next tutorial.
 --- !u!222 &434334041
 CanvasRenderer:
   m_ObjectHideFlags: 0
