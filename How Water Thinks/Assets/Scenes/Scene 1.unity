@@ -6249,6 +6249,17 @@ Prefab:
       value: Use 'Q', 'E', 'W', 'A', 'S', 'D' on the keyboard or numbers 4-9 on the
         number pad to rotate the camera around the membrane model.
       objectReference: {fileID: 0}
+    - target: {fileID: 114703886336852018, guid: fc0b4f80660e0e34684414ce8740b227,
+        type: 2}
+      propertyPath: m_Text
+      value: 'This entire box represents
+
+        an area of our cell. The top half
+
+        represents the outside of the cell
+
+        and the bottom half represents the inside.'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc0b4f80660e0e34684414ce8740b227, type: 2}
   m_IsPrefabAsset: 0
@@ -6759,7 +6770,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: -390.03003}
+  m_AnchoredPosition: {x: -0.00012207031, y: -390.03003}
   m_SizeDelta: {x: 0, y: -779.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1296319585

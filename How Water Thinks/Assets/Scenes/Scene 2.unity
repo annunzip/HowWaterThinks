@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2536,12 +2536,12 @@ Prefab:
     - target: {fileID: 224771327768942908, guid: 8f7c13eddfb4f48419b5a3a6ac88c463,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224207416663570350, guid: 8f7c13eddfb4f48419b5a3a6ac88c463,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1155172219811634, guid: 8f7c13eddfb4f48419b5a3a6ac88c463, type: 2}
       propertyPath: m_IsActive
@@ -8211,6 +8211,17 @@ Prefab:
       propertyPath: m_Text
       value: Use 'Q', 'E', 'W', 'A', 'S', 'D' on the keyboard or numbers 4-9 on the
         number pad to rotate the camera around the membrane model.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114703886336852018, guid: fc0b4f80660e0e34684414ce8740b227,
+        type: 2}
+      propertyPath: m_Text
+      value: 'This entire box represents
+
+        an area of our cell. The top half
+
+        represents the outside of the cell
+
+        and the bottom half represents the inside.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc0b4f80660e0e34684414ce8740b227, type: 2}

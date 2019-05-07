@@ -198,6 +198,17 @@ Prefab:
       value: Use 'Q', 'E', 'W', 'A', 'S', 'D' on the keyboard or numbers 4-9 on the
         number pad to rotate the camera around the membrane model.
       objectReference: {fileID: 0}
+    - target: {fileID: 114198851363135786, guid: 5c8bd3b6a2947ae449e2d2e2dfdd7595,
+        type: 2}
+      propertyPath: m_Text
+      value: 'This entire box represents
+
+        an area of our cell. The top half
+
+        represents the outside of the cell
+
+        and the bottom half represents the inside.'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c8bd3b6a2947ae449e2d2e2dfdd7595, type: 2}
   m_IsPrefabAsset: 0
