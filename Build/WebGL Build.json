@@ -1,12 +1,15 @@
 {
-  "companyName": "The X-Press",
-  "productName": "How Water Thinks",
-  "dataUrl": "WebGL Build.data.unityweb",
-  "wasmCodeUrl": "WebGL Build.wasm.code.unityweb",
-  "wasmFrameworkUrl": "WebGL Build.wasm.framework.unityweb",
-  "TOTAL_MEMORY": 512000000,
-  "graphicsAPI": [ "WebGL 2.0", "WebGL 1.0" ],
-  "webglContextAttributes": { "preserveDrawingBuffer": false },
-  "splashScreenStyle": "Dark",
-  "backgroundColor": "#231F20"
+"companyName": "The X-Press",
+"productName": "How Water Thinks",
+"dataUrl": "WebGL Build.data.unityweb",
+"wasmCodeUrl": "WebGL Build.wasm.code.unityweb",
+"wasmFrameworkUrl": "WebGL Build.wasm.framework.unityweb",
+"asmCodeUrl": "WebGL Build.asm.code.unityweb",
+"asmMemoryUrl": "WebGL Build.asm.memory.unityweb",
+"asmFrameworkUrl": "WebGL Build.asm.framework.unityweb",
+"TOTAL_MEMORY": 419430400,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
 }
